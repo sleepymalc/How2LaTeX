@@ -52,7 +52,7 @@ This is one paragraph.
 This is another.
 ```
 
-Hence, while `\\` will create a new line and start a new paragraph, but as we now know, if you already have a blank line between paragraphs, `\\` is redundant.
+Hence, while `\\` will create a new line and start a new paragraph, as we now know, if you already have a blank line between paragraphs, `\\` is redundant.
 
 ## Math Environment
 
