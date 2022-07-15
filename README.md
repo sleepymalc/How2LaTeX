@@ -170,7 +170,9 @@ with the source code being
 
   > We'll talk about this later. Notice that you can also write `\Vert x\Vert` for $\Vert x\Vert$, which is my preferred one.
 
-* `[]` (`\lbreak` and `\rbreak`)
+* `[]` (`\lbrack` and `\rbrack`)
+
+  > They are indeed equivalent, so I prefer `[]` for simplicity.
 
 * `<>` (`\langle` and `\rangle`)
 
@@ -227,6 +229,10 @@ produces
 $$( \big( \Big( \bigg( \Bigg($$
 
 A typical use case is that, `\left( k g(x) \right)` produces $\left( k g(x) \right)$, while `\left` and `\right` produce the same size delimiters as those nested within it. In this case, we can use `\big( k g(x) \big)`, which produces $\big( k g(x) \big)$ to further distinguish the nested parentheses.
+
+> A particularly important use case is that, when you uses `\underbrace`, the automatic resizing will be larger than expected. For example,
+>
+> $$\mathbb{E}\left\lbrack \prod_{i=0}^\infty \underbrace{X_i}_{\text{ran var.}}\right\rbrack\text{ v.s. }\mathbb{E}\big[\prod_{i=0}^\infty \underbrace{X_i}_{\text{ran var.}}\big]$$ 
 
 ### Limits
 
