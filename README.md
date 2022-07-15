@@ -72,13 +72,9 @@ you should write `\int x^2 \mathrm{d}x` instead of `\int x^2 \text{d}x`.
 
 Most of the time, when you're writing a math symbol with your direct keyboard input, there's a command in $\LaTeX$ instead. Here is a short list of them:
 
-* `:` (`\colon`)
+* `:` (`\colon`): Instead of writing `f:X\to Y` for $f:X\to Y$, write `f\colon X\to Y` instead.
 
-  Instead of writing `f:X\to Y` for $f:X\to Y$, write `f\colon X\to Y` instead.
-
-* `...` `(\ldots`)
-
-  This is a straightforward one. Instead of writing `a_1, a_2, ...` for $a_1, a_2, \ldots$, write `a_2, a_2, \ldots` instead.
+* `...` `(\ldots`): This is a straightforward one. Instead of writing `a_1, a_2, ...` for $a_1, a_2, \ldots$, write `a_2, a_2, \ldots` instead.
 
   > There's something called `\cdots` also, which is my personal perferred one. If you really want to know about `...`, there are actually five types of them:
   >
@@ -92,51 +88,31 @@ Most of the time, when you're writing a math symbol with your direct keyboard in
   >
   > The above is the conventions suggested by American Mathematical Society. If you don't want to follow them strictly, just choose one of them and stick with it.
 
-* `'` (`\prime`)
+* `'` (`\prime`): When you need to render $x^\prime$, write `x^\prime` instead of simply `x'`.
 
-  When you need to render $x^\prime$, write `x^\prime` instead of simply `x'`.
+* `*` (`\ast`): When you need to render $x^\ast$, write `x^\ast` instead of simply `x*`.
 
-* `*` (`\ast`)
+* `~` (`\sim`): This is often used when you want to say something like $x\sim \mathcal{N}(0 ,1)$, i.e., $x$ is sampled from a normal distribution. In this case, write `x\sim \mathcal{N}(0, 1)` instead of `x~ \mathcal{N}(0, 1)`.
 
-  When you need to render $x^\ast$, write `x^\ast` instead of simply `x*`.
-
-* `~` (`\sim`)
-
-  This is often used when you want to say something like $x\sim \mathcal{N}(0 ,1)$, i.e., $x$ is sampled from a normal distribution. In this case, write `x\sim \mathcal{N}(0, 1)` instead of `x~ \mathcal{N}(0, 1)`.
-
-* `:=`, `=:` (`\coloneqq`, `\eqqcolon`)
-
-  A direct one. When you define a new symbol such as let $y\coloneqq x_1-x_2$, write `y\coloneqq x_1 - x_2` instead of `y:= x_1 - x_2`.
+* `:=`, `=:` (`\coloneqq`, `\eqqcolon`): A direct one. When you define a new symbol such as let $y\coloneqq x_1-x_2$, write `y\coloneqq x_1 - x_2` instead of `y:= x_1 - x_2`.
 
   > This need `\usepackage{mathtools}` in your header, namely you need `mathtools` package.
 
-* `>>`, `<<` (`\gg`, `\ll`)
-
-  Use `\gg` for much greater than and `\ll` for much less than instead of directly using `>>` and `<<`. The former ones produce $\gg$, $\ll$, while the latter ones produce $>>$ and $<<$.
+* `>>`, `<<` (`\gg`, `\ll`): Use `\gg` for much greater than and `\ll` for much less than instead of directly using `>>` and `<<`. The former ones produce $\gg$, $\ll$, while the latter ones produce $>>$ and $<<$.
 
 #### Semantic
 
 There are also commands which produce exactly the same output, but with different semantics. To keep the source code clean, we mention some of them.
 
-* `\rightarrow` v.s. `\to` ($\rightarrow$)
+* `\rightarrow` v.s. `\to` ($\rightarrow$): I use `\to` for mapping, e.g. $f\colon X\to Y$, while `\rightarrow` for all other usages.
 
-  I use `\to` for mapping, e.g. $f\colon X\to Y$, while `\rightarrow` for all other usages.
+* `\leftarrow` v.s. `\gets` ($\leftarrow$): I use `\gets` when writing pseudocode, while `\leftarrow` for all other useages.
 
-* `\leftarrow` v.s. `\gets` ($\leftarrow$)
+* `\Rightarrow` v.s. `\implies` ($\Rightarrow$ v.s. $\implies$): I use `\implies` when writing proof, while `\Rightarrow` for all other usages.
 
-  I use `\gets` when writing pseudocode, while `\leftarrow` for all other useages.
+* `\Leftarrow` v.s. `\impliedby` ($\Leftarrow$ v.s. $\impliedby$): Similarly, I use `\impliedby` when writing proof, while `\Leftarrow` for all other usages.
 
-* `\Rightarrow` v.s. `\implies` ($\Rightarrow$ v.s. $\implies$)
-
-  I use `\implies` when writing proof, while `\Rightarrow` for all other usages.
-
-* `\Leftarrow` v.s. `\impliedby` ($\Leftarrow$ v.s. $\impliedby$)
-
-  Similarly, I use `\impliedby` when writing proof, while `\Leftarrow` for all other usages.
-
-* `\Leftrightarrow` v.s. `\iff` ($\Leftrightarrow$ v.s. $\iff$)
-
-  Similarly, I use `\iff` when writing proof, while `\Leftrightarrow` for all other usages.
+* `\Leftrightarrow` v.s. `\iff` ($\Leftrightarrow$ v.s. $\iff$): Similarly, I use `\iff` when writing proof, while `\Leftrightarrow` for all other usages.
 
   > Since `\implies`, `\impliedby`, and also `\iff` are quite long, so I redefined them into their corresponding ones for a more compact look. But in the code, I still type `\implies` when writing proof for a good semantic meaning. To redefine them, put
   >
