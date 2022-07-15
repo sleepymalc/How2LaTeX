@@ -214,6 +214,8 @@ as we desired.
 
 #### Manual Sizing
 
+Sometimes the automatic sizing may tend to be too big since it's trying to wrap everything inside, for example, $\vert \hat{x}^{(n)}_i\vert$ is way better than $\left\vert \hat{x}^{(n)}_i \right\vert$ while the latter uses `\left\vert ... \right\vert` and the former simply uses `\vert ... \vert`.
+
 ### Limits
 
 When using inline math environment, you'll often see $\sum_{i=1}^\infty x_i$, which is the default behavior when typing `\sum_{i=1}^\infty x_i`. But if you type the same thing in display math mode, you'll get 
