@@ -208,7 +208,7 @@ $$\Delta^n\coloneqq \left\\{(t_0, \ldots, t_n)\in\mathbb{R}^{n+1} \mid t_i\geq 0
 
 We se that $\mid$ is not being resized together with $\{\}$. To do this, we add a `\middle` before `\mid` and get
 
-$$\Delta^n\coloneqq \left\\{(t_0, \ldots, t_n)\in\mathbb{R}^{n+1}\middle\mid t_i\geq 0, \sum_{i}^{n}t_i=1\right\\}$$
+$$\Delta^n\coloneqq \left\\{(t_0, \ldots, t_n)\in\mathbb{R}^{n+1}\middle| t_i\geq 0, \sum_{i}^{n}t_i=1\right\\}$$
 
 as we desired.
 
