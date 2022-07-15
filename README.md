@@ -267,7 +267,7 @@ Another thing relates to the sizing is the way of handling **continued fractions
 
 $$x = a_0 + \frac{1}{a_1 + \frac{1}{a_2 + \frac{1}{a_3 + \frac{1}{a_4} } } }$$
 
-with code being
+with the code being
 
 ```latex
 \[
