@@ -1,6 +1,8 @@
 # How2LaTeX
 This is a quick guide of writing $\LaTeX$ **CORRECTLY.** Throughout this tutorial, I assume you're familiar with basic $\LaTeX$ syntex and know how to do all the basic stuffs, e.g., compiling, using `itemize`, `enumerate` environments.
 
+For more advanced $\LaTeX$ setup, please see my [VSCode-LaTeX-Inkscape](https://github.com/sleepymalc/VSCode-LaTeX-Inkscape) setup for writing efficiently and also drawing professionally.
+
 ## The Basic
 
 ### Newline `\\`
@@ -297,7 +299,7 @@ instead. You can indeed put the subscript and supscript below/on the summation s
 >
 > Notice that if you want to apply this to all your integral, please use `\usepackage[intlimits]{amsmath}` when loading `amsmath` package. This will only be applied when using integrals, since as mentioned, `\limits` with integral is treated differently.
 
-## Reference
+## Reference and Citation
 
 TODO
 
