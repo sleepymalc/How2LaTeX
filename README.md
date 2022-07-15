@@ -126,7 +126,7 @@ Most of the time, when you're writing a math symbol with your direct keyboard in
 
 * `:=`, `=:` (`\coloneqq`, `\eqqcolon`): Another direct one. When you define a new symbol such as let $y\coloneqq x_1-x_2$, write `y \coloneqq x_1 - x_2` instead of `y := x_1 - x_2`.
 
-  > This needs `\usepackage{mathtools}` in your header, namely you need `mathtools` package.
+  > You need to put `\usepackage{mathtools}` in your header, namely you need the `mathtools` package.
 
 * `>>`, `<<` (`\gg`, `\ll`): Use `\gg` for much greater than and `\ll` for much less than instead of directly using `>>` and `<<`. The former ones produce $\gg$, $\ll$, while the latter ones produce $>>$ and $<<$.
 
