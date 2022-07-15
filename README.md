@@ -156,7 +156,7 @@ There are also commands which produce exactly the same output, but with differen
 
 #### Misused
 
-I sometimes saw things like $\cup_{i=1}^{\infty} X_i$ instead of $\bigcup\nolimits_{i=1}^\infty X_i$. Clearly, the latter one is preferred since `\cup` is a binary operator, so it should only be used when you want to write something like $A\cup B$. If you want to perform such operation multiple time as in our example, use `\bigcup` instead. Below are some examples.
+I sometimes saw things like $\cup_{i=1}^{\infty} X_i$ instead of $\bigcup\nolimits_{i=1}^\infty X_i$. Clearly, the latter one is preferred since `\cup` is a binary operator, so it should only be used when you want to write something like $A\cup B$. If you want to perform such operation multiple times as in our example, use `\bigcup` instead. Below are some examples.
 
 <div align="center">
 
