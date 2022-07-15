@@ -204,17 +204,29 @@ whose source code being
 
 And for `\middle`, you might have encountered the following situation:
 
-$$\Delta^n\coloneqq \left\\{(t_0, \ldots, t_n)\in\mathbb{R}^{n+1} | t_i\geq 0, \sum_{i}^{n}t_i=1\right\\}$$
+$$\Delta^n\coloneqq \left\\{(t_0, \ldots, t_n)\in\mathbb{R}^{n+1} | t_i\geq 0, \sum_{i=0}^{n}t_i=1\right\\}$$
 
 We se that $|$ is not being resized together with $\{\}$. To do this, we add a `\middle` before `|` and get
 
-$$\Delta^n\coloneqq \left\\{(t_0, \ldots, t_n)\in\mathbb{R}^{n+1}\middle| t_i\geq 0, \sum_{i}^{n}t_i=1\right\\}$$
+$$\Delta^n\coloneqq \left\\{(t_0, \ldots, t_n)\in\mathbb{R}^{n+1}\middle| t_i\geq 0, \sum_{i=0}^{n}t_i=1\right\\}$$
 
 as we desired.
 
 #### Manual Sizing
 
-Sometimes the automatic sizing may tend to be too big since it's trying to wrap everything inside, for example, $\vert \hat{x}^{(n)}_i\vert$ is way better than $\left\vert \hat{x}^{(n)}_i \right\vert$ while the latter uses `\left\vert ... \right\vert` and the former simply uses `\vert ... \vert`.
+Sometimes the automatic sizing may tend to be too big since it's trying to wrap everything inside, for example, $\vert \hat{x}^{(n)}_i\vert$ is way better than $\left\vert \hat{x}^{(n)}_i \right\vert$ while the latter uses `\left\vert ... \right\vert` and the former simply uses `\vert ... \vert`. In this case, uses `\big`, `\Big`, `\bigg` and `\Bigg` instead of `\left` and `\right` as modifiers. For example, 
+
+```latex
+\[
+	( \big( \Big( \bigg( \Bigg(
+\]
+```
+
+produces
+
+$$( \big( \Big( \bigg( \Bigg($$
+
+
 
 ### Limits
 
