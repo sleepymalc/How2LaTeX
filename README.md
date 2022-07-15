@@ -124,9 +124,9 @@ Most of the time, when you're writing a math symbol with your direct keyboard in
 
 * `~` (`\sim`): This is often used when you want to say something like $x\sim \mathcal{N}(0 ,1)$, i.e., $x$ is sampled from a normal distribution. In this case, write `x \sim \mathcal{N}(0, 1)` instead of `x ~ \mathcal{N}(0, 1)`.
 
-* `:=`, `=:` (`\coloneqq`, `\eqqcolon`): A direct one. When you define a new symbol such as let $y\coloneqq x_1-x_2$, write `y \coloneqq x_1 - x_2` instead of `y := x_1 - x_2`.
+* `:=`, `=:` (`\coloneqq`, `\eqqcolon`): Another direct one. When you define a new symbol such as let $y\coloneqq x_1-x_2$, write `y \coloneqq x_1 - x_2` instead of `y := x_1 - x_2`.
 
-  > This need `\usepackage{mathtools}` in your header, namely you need `mathtools` package.
+  > This needs `\usepackage{mathtools}` in your header, namely you need `mathtools` package.
 
 * `>>`, `<<` (`\gg`, `\ll`): Use `\gg` for much greater than and `\ll` for much less than instead of directly using `>>` and `<<`. The former ones produce $\gg$, $\ll$, while the latter ones produce $>>$ and $<<$.
 
