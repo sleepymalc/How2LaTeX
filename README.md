@@ -48,7 +48,7 @@ Both `$...$` and `$$...$$` are fine by this is why you should avoid them: they a
 
 ### Text in Math mode
 
-When you need to have some texts in your math equation, **please** use `\text{...}` wrapping your texts around. For example,
+When you need to have some texts in your math equation, **please** use `\text{...}` to wrap the texts around. For example,
 
 ```latex
 \[
