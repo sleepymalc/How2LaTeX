@@ -230,7 +230,7 @@ And for `\middle`, you might have encountered the following situation:
 
 $$\Delta^n\coloneqq \left\\{(t_0, \ldots, t_n)\in\mathbb{R}^{n+1} | t_i\geq 0, \sum_{i=0}^{n}t_i=1\right\\}$$
 
-We se that $|$ is not being resized together with $\{\}$. To do this, we add a `\middle` before `|` and get
+We se that $|$ is not being resized together with $\\{ \\}$. To do this, we add a `\middle` before `|` and get
 
 $$\Delta^n\coloneqq \left\\{(t_0, \ldots, t_n)\in\mathbb{R}^{n+1}\middle| t_i\geq 0, \sum_{i=0}^{n}t_i=1\right\\}$$
 
