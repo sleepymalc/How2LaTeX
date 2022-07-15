@@ -100,15 +100,25 @@ Most of the time, when you're writing a math symbol with your direct keyboard in
 
   > This need `\usepackage{mathtools}` in your header, namely you need `mathtools` package.
 
-* `||`, `|| ||` (`\vert`, `\Vert`( `\|`))
+### Sizing
 
-  This is a fun one, since we often use this to denote the absolute value like $\vert x \vert$. In this case, write `\vert x \vert` instead of `|x|`. And for norm, write `\|x\|` instead of `||x||` for $\|x\|$.
+#### Brackets, Braces
+
+We first note that there are some commonly misused symbols for different kinds of brackets and braces as follows.
+
+* `||` (`\vert`)
+
+  This is a fun one, since we often use this to denote the absolute value like $\vert x \vert$. In this case, write `\vert x \vert` instead of `|x|`. 
+
+* `|| ||` (`\Vert` or `\|`)
+
+  For norm, write `\|x\|` instead of `||x||` for $\|x\|$.
 
   > We'll talk about this later. Notice that you can also write `\Vert x\Vert` for $\Vert x\Vert$, which is my preferred one.
 
-* `[]` (`\lbreak` and `\rbreak`), `<>` (`\langle` and `\rangle`)
+* `[]` (`\lbreak` and `\rbreak`)
 
-### Sizing
+* `<>` (`\langle` and `\rangle`)
 
 #### Automatic Sizing
 
