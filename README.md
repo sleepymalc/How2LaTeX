@@ -150,9 +150,7 @@ I sometimes saw something like $\cup_{i=1}^{\infty} X_i$ instead of $\bigcup\nol
 
 #### Else
 
-Finally, there is a tricky one, the **empty set** symbol. you can either write `\emptyset` or `\varnothing`, which produces $\emptyset$ and $\varnothing$. I prefer the latter one, but choose whatever you want.
-
-Also, it seems that not everyone knows the command `\ell` for producing a nice looking $\ell$, and instead, they simply type `l`, which produces $l$.
+There are two symbols I want to mention, the **empty set** symbol and **l** (ell). You can either write `\emptyset` or `\varnothing` to denote an empty set, which produces $\emptyset$ and $\varnothing$. I prefer the latter one, but choose whatever you want. On the other hand, it seems like not everyone knows the command `\ell` for producing a nice looking $\ell$, and instead, they simply type `l`, which produces $l$.
 
 ### Sizing
 
