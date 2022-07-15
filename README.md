@@ -62,7 +62,7 @@ As you know, `$...$` and `$$...$$` are two commonly used commands to write mathe
 
 $$e^{i\pi} + 1 = 0.$$
 
-Both `$...$` and `$$...$$` are fine by this is why you should avoid them: they are $\TeX$ commands, which is too old in some sense. A better way to write math equations is to use `\(...\)` and `\[...\]`, which is supported by modern $\LaTeX$.
+Both `$...$` and `$$...$$` are fine but this is why you should avoid them: they are $\TeX$ commands, which is too old in some sense. A better way to write math equations is to use `\(...\)` and `\[...\]`, which is supported by modern $\LaTeX$.
 
 > While `equation*` environment is also an good option for unnumbered equations, but I tend to keep things simple and unified. For numbered equation, `equation` and `align` environment should be used. We'll talk about referencing numbered equations later.
 
