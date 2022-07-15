@@ -232,7 +232,7 @@ A typical use case is that, `\left( k g(x) \right)` produces $\left( k g(x) \rig
 
 > A particularly important use case is that, when you uses `\underbrace`, the automatic resizing will be larger than expected. For example,
 >
-> $$\mathbb{E}\left\lbrack \underbrace{\prod_{i=0}^\infty X_i}\right\rbrack\text{ v.s. }\mathbb{E}\big\lbrack \underbrace{\prod_{i=0}^{\infty} X_i}\big\rbrack$$ 
+> $$\mathbb{E}\left\lbrack \underbrace{\prod_{i=0}^\infty X_i}\right\rbrack\text{ v.s. }\mathbb{E}\bigg\lbrack \underbrace{\prod_{i=0}^{\infty} X_i}\bigg\rbrack$$ 
 
 ### Limits
 
