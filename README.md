@@ -232,9 +232,39 @@ A typical use case is that, `\left( k g(x) \right)` produces $\left( k g(x) \rig
 
 > A particularly important use case is that, when you uses `\underbrace`, the automatic resizing will be larger than expected. For example,
 >
-> $$\mathbb{E}\left\lbrack \underbrace{\prod_{i=0}^\infty X_i}\right\rbrack\text{ v.s. }\mathbb{E}\bigg[] \underbrace{\prod_{i=0}^{\infty} X_i}\bigg],$$ 
+> $$\mathbb{E}\left\lbrack \underbrace{\prod_{i=0}^\infty X_i}\right\rbrack\text{ v.s. }\mathbb{E}\bigg[ \underbrace{\prod_{i=0}^{\infty} X_i}\bigg],$$ 
 >
 > where I use `\left[ ... \right]` on the left and `\bigg[ ... \bigg]` on the right. Notice that we even haven't wrote anything under the braces, and the left one is already ugly.
+
+#### Else
+
+Another thing relates to the sizing is the way of handling **continued fractions**. If we use `\frac{}{}` throughout, we'll have something like
+
+$$x = a_0 + \frac{1}{a_1 + \frac{1}{a_2 + \frac{1}{a_3 + \frac{1}{a_4} } } }$$
+
+with code being
+
+```latex
+\[
+	x = a_0 + \frac{1}{a_1 + \frac{1}{a_2 + \frac{1}{a_3 + \frac{1}{a_4} } } }
+\]
+```
+
+which is ugly. Instead, we use `\cfrac{}{}`, where that extra `c` stands for `continued`. In this case, we have
+
+$$x = a_0 + \cfrac{1}{a_1 + \cfrac{1}{a_2 + \cfrac{1}{a_3 + \cfrac{1}{a_4} } } },$$
+
+with the code being
+
+```latex
+\[
+	x = a_0 + \cfrac{1}{a_1 + \cfrac{1}{a_2 + \cfrac{1}{a_3 + \cfrac{1}{a_4} } } }
+\]
+```
+
+
+
+### Spacing
 
 ### Limits
 
