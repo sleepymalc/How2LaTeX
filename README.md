@@ -253,13 +253,13 @@ produces
 
 $$( \big( \Big( \bigg( \Bigg($$
 
-A typical use case is that, `\left( k g(x) \right)` produces $\left( k g(x) \right)$, while `\left` and `\right` produce the same size delimiters as those nested within it. In this case, we can use `\big( k g(x) \big)`, which produces $\big( k g(x) \big)$ to further distinguish the nested parentheses.
+A particularly important use case is that, when you uses `\underbrace`, the automatic resizing will be larger than expected. For example,
 
-> A particularly important use case is that, when you uses `\underbrace`, the automatic resizing will be larger than expected. For example,
->
-> $$\mathbb{E}\left\lbrack \underbrace{\prod_{i=0}^\infty X_i}\right\rbrack\text{ v.s. }\mathbb{E}\bigg[ \underbrace{\prod_{i=0}^{\infty} X_i}\bigg],$$ 
->
-> where I use `\left[ ... \right]` on the left and `\bigg[ ... \bigg]` on the right. Notice that we even haven't written anything under the braces, and the left one is already ugly.
+$$\mathbb{E}\left\lbrack \underbrace{\prod_{i=0}^\infty X_i}\right\rbrack\text{ v.s. }\mathbb{E}\bigg[ \underbrace{\prod_{i=0}^{\infty} X_i}\bigg],$$ 
+
+where I use `\left[ ... \right]` on the left and `\bigg[ ... \bigg]` on the right. Notice that we even haven't written anything under the braces, and the left one is already ugly.
+
+> Another use case is that, `\left( k g(x) \right)` produces $\left( k g(x) \right)$, while `\left` and `\right` produce the same size delimiters as those nested within it. In this case, we can use `\big( k g(x) \big)`, which produces $\big( k g(x) \big)$ to further distinguish the nested parentheses.
 
 #### Else
 
