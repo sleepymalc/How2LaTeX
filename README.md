@@ -99,7 +99,7 @@ Most of the time, when you're writing a math symbol with your direct keyboard in
 
 * `:` (`\colon`): Instead of writing `f:X\to Y` for $f:X\to Y$, write `f\colon X\to Y` instead.
 
-* `...` `(\ldots`): This is a straightforward one. Instead of writing `a_1, a_2, ...` for $a_1, a_2, \ldots$, write `a_2, a_2, \ldots` instead.
+* `...` (`\ldots`): This is a straightforward one. Instead of writing `a_1, a_2, ...` for $a_1, a_2, \ldots$, write `a_2, a_2, \ldots` instead.
 
   > There's something called `\cdots` also, which is my personal preferred one. If you really want to know about `...`, there are actually five types of them:
   > <div align="center">
