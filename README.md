@@ -3,7 +3,19 @@ This is a quick guide of writing $\LaTeX$ **CORRECTLY.** Throughout this tutoria
 
 ## The Basic
 
-When writing paragraphs, $\LaTeX$ will wrap text in adjacent lines as if they were *part of the same paragraph*, while treat `\n` as a sign for starting a new paragraph.
+### Newline `\\`
+
+I frequently saw the following:
+
+```latex
+This is one paragraph.\\
+
+This is another.
+```
+
+---
+
+When writing paragraphs, $\LaTeX$ will wrap text in adjacent lines as if they were *part of the same paragraph*, while treat `\n` (i.e., newline symbol) as a sign for starting a new paragraph.
 
 ```latex
 This is 
@@ -20,14 +32,6 @@ This is one paragraph.
 This is another.
 ```
 
-I frequently saw the following:
-
-```latex
-This is one paragraph.\\
-
-This is another.
-```
-
-While `\\` will create a new line, hence start a new paragraph, but as we now know, if you already have a blank line between paragraphs, `\\` is redundant.
+Hence, while `\\` will create a new line, hence start a new paragraph, but as we now know, if you already have a blank line between paragraphs, `\\` is redundant.
 
 ## Math Environment
