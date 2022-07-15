@@ -192,7 +192,7 @@ The size of the absolute value and the parenthesis are still in the default size
 
 * `|...|` (`\vert ... \vert`): This is a fun one, since we often use this to denote the absolute value like $\vert x \vert$. In this case, write `\vert x \vert` instead of `|x|`. 
 
-* `||...||` (`\lVert ... \rVert` or `\| ... \|`): For norm, write `\|x\|` instead of `||x||` for $\|x\|$.
+* `||...||` (`\lVert ... \rVert` or `\| ... \|`): For norm, write `\|x\|` instead of `||x||` for $\lVert x\rVert$.
 
   > We'll talk about this later. Notice that you can also write `\Vert x \Vert` for $\Vert x\Vert$, though I still prefer `\lVert x \rVert`.
 
