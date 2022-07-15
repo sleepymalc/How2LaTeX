@@ -172,7 +172,10 @@ I sometimes saw things like $\cup_{i=1}^{\infty} X_i$ instead of $\bigcup\nolimi
 
 #### Else
 
-There are two symbols I want to mention, the **empty set** symbol and **l** (ell). You can either write `\emptyset` or `\varnothing` to denote an empty set, which produces $\emptyset$ and $\varnothing$. I prefer the latter one, but choose whatever you want. On the other hand, it seems like not everyone knows the command `\ell` for producing a nice looking $\ell$, and instead, they simply type `l`, which produces $l$.
+There are two symbols I want to mention, the **empty set** symbol and **l** (ell). 
+
+* You can either write `\emptyset` or `\varnothing` to denote an empty set, which produces $\emptyset$ and $\varnothing$. I prefer the latter one, but choose whatever you want. 
+* On the other hand, it seems like not everyone knows the command `\ell` for producing a nice looking $\ell$, and instead, they simply type `l`, which produces $l$. Not sure whether they're intended, but this is something worth mentioning.
 
 ### Sizing
 
