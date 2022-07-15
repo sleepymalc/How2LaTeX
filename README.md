@@ -97,7 +97,7 @@ you should write `\int x \,\mathrm{d}x` instead of `\int x \,\text{d}x`.
 
 Most of the time, when you're writing a math symbol with your direct keyboard input, there's a corresponding command in $\LaTeX$ as well. Here is a short list of them:
 
-* `:` (`\colon`): Instead of writing `f:X\to Y` for $f:X\to Y$, write `f\colon X\to Y` instead.
+* `:` (`\colon`): Instead of writing `f: X \to Y` for $f:X\to Y$, write `f\colon X \to Y` instead.
 
 * `...` (`\ldots`): This is a straightforward one. Instead of writing `a_1, a_2, ...` for $a_1, a_2, \ldots$, write `a_2, a_2, \ldots` instead.
 
@@ -122,9 +122,9 @@ Most of the time, when you're writing a math symbol with your direct keyboard in
 
   > There are also something called `\star`, which produces $\star$. In some cases, $x^\star$ may be desired.
 
-* `~` (`\sim`): This is often used when you want to say something like $x\sim \mathcal{N}(0 ,1)$, i.e., $x$ is sampled from a normal distribution. In this case, write `x\sim \mathcal{N}(0, 1)` instead of `x~ \mathcal{N}(0, 1)`.
+* `~` (`\sim`): This is often used when you want to say something like $x\sim \mathcal{N}(0 ,1)$, i.e., $x$ is sampled from a normal distribution. In this case, write `x \sim \mathcal{N}(0, 1)` instead of `x ~ \mathcal{N}(0, 1)`.
 
-* `:=`, `=:` (`\coloneqq`, `\eqqcolon`): A direct one. When you define a new symbol such as let $y\coloneqq x_1-x_2$, write `y\coloneqq x_1 - x_2` instead of `y:= x_1 - x_2`.
+* `:=`, `=:` (`\coloneqq`, `\eqqcolon`): A direct one. When you define a new symbol such as let $y\coloneqq x_1-x_2$, write `y \coloneqq x_1 - x_2` instead of `y := x_1 - x_2`.
 
   > This need `\usepackage{mathtools}` in your header, namely you need `mathtools` package.
 
@@ -134,15 +134,15 @@ Most of the time, when you're writing a math symbol with your direct keyboard in
 
 There are also commands which produce exactly the same output, but with different semantics. To keep the source code clean, we mention some of them.
 
-* `\rightarrow` v.s. `\to` ($\rightarrow$): I use `\to` for mapping, e.g. $f\colon X\to Y$, while `\rightarrow` for all other usages.
+* `\rightarrow` v.s. `\to` ($\rightarrow$): I use `\to` for mapping, e.g. $f\colon X\to Y$, while `\rightarrow` for all other cases.
 
-* `\leftarrow` v.s. `\gets` ($\leftarrow$): I use `\gets` when writing pseudocode, while `\leftarrow` for all other useages.
+* `\leftarrow` v.s. `\gets` ($\leftarrow$): I use `\gets` when writing pseudocode, while `\leftarrow` for all other cases.
 
-* `\Rightarrow` v.s. `\implies` ($\Rightarrow$ v.s. $\implies$): I use `\implies` when writing proofs, while `\Rightarrow` for all other usages.
+* `\Rightarrow` v.s. `\implies` ($\Rightarrow$ v.s. $\implies$): I use `\implies` when writing proofs, while `\Rightarrow` for all other cases.
 
-* `\Leftarrow` v.s. `\impliedby` ($\Leftarrow$ v.s. $\impliedby$): Similarly, I use `\impliedby` when writing proofs, while `\Leftarrow` for all other usages.
+* `\Leftarrow` v.s. `\impliedby` ($\Leftarrow$ v.s. $\impliedby$): I use `\impliedby` when writing proofs, while `\Leftarrow` for all other cases.
 
-* `\Leftrightarrow` v.s. `\iff` ($\Leftrightarrow$ v.s. $\iff$): Similarly, I use `\iff` when writing proofs, while `\Leftrightarrow` for all other usages.
+* `\Leftrightarrow` v.s. `\iff` ($\Leftrightarrow$ v.s. $\iff$): Similarly, I use `\iff` when writing proofs, while `\Leftrightarrow` for all other cases.
 
   > Since `\implies`, `\impliedby`, and also `\iff` are quite long, so I redefined them into their corresponding ones for a more compact look. But in the code, I still type `\implies` when writing proof. To redefine them, put
   >
@@ -184,7 +184,7 @@ with the source code being
 
 ```latex
 \[
-	N \coloneqq \vert\sum\limits_{j=1}^\infty(\sum\limits_{i=1}^\infty X_{ij})\vert.
+	N \coloneqq \vert \sum\limits_{j=1}^\infty ( \sum\limits_{i=1}^\infty X_{ij} ) \vert.
 \]
 ```
 
@@ -209,7 +209,7 @@ To automatically resize the brackets, and parentheses, we use `\left...\right...
 
 ```latex
 \[
-	N \coloneqq \left\vert\sum\limits_{j=1}^\infty\left(\sum\limits_{i=1}^\infty X_{ij}\right)\right\vert
+	N \coloneqq \left\vert \sum\limits_{j=1}^\infty \left( \sum\limits_{i=1}^\infty X_{ij} \right) \right\vert
 \]
 ```
 
@@ -223,7 +223,7 @@ $$\left.\frac{x^2}{2}\right\vert_0^1$$
 with the source code being
 
 ```latex
-\left.\frac{x^2}{2}\right|_0^1
+\left. \frac{x^2}{2} \right|_0^1
 ```
 
 And for `\middle`, you might have encountered the following situation:
