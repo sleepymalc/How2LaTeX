@@ -156,7 +156,7 @@ There are also commands which produce exactly the same output, but with differen
 
 #### Misused
 
-I sometimes saw things like $\cup_{i=1}^{\infty} X_i$ instead of $\bigcup\nolimits_{i=1}^\infty X_i$. Clearly, the latter one is preferred since `\cup` is a binary operator, so it should only be used when you want to write something like $A\cup B$. If you want to perform such operation multiple times as in our example, use `\bigcup` instead. Below are some examples.
+I sometimes see things like $\cup_{i=1}^{\infty} X_i$ instead of $\bigcup\nolimits_{i=1}^\infty X_i$. Clearly, the latter one is preferred since `\cup` is a binary operator, so it should only be used when you want to write something like $A\cup B$. If you want to perform such an operation multiple times as in our example, use `\bigcup` instead. Below are some examples.
 
 <div align="center">
 
@@ -193,7 +193,7 @@ with the source code being
 
 The size of the absolute value and the parenthesis are still in the default size, while the formula being wrapped is much higher than the default size. Before we talk about how to resolve this sizing issue, we should first see the common commands which will cause this kind of problem.
 
-* `|...|` (`\vert ... \vert`): This is a fun one, since we often use this to denote the absolute value like $\vert x \vert$. In this case, write `\vert x \vert` instead of `|x|`. 
+* `|...|` (`\vert ... \vert`): This is a fun one since we often use this to denote the absolute value like $\vert x \vert$. In this case, write `\vert x \vert` instead of `|x|`. 
 
 * `||...||` (`\lVert ... \rVert` or `\| ... \|`): For norm, write `\|x\|` instead of `||x||` for $\lVert x\rVert$.
 
