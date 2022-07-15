@@ -287,6 +287,8 @@ with the code being
 \]
 ```
 
+We see that with `\cfrac{}{}`, the equation is spaced more equally in the vertical direction, hence it's clearer.
+
 ### Spacing
 
 As we have seen before, when I type an indefinite integral, we have something like
