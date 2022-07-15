@@ -131,15 +131,15 @@ There are also commands which produce exactly the same output, but with differen
 
 #### Misused
 
-I sometimes saw something like $\cup_{i=1}^{\infty} X_i$ instead of $\bigcup\nolimits_{i=1}^\infty X_i$. Clearly, the latter one is preferred since `\cup` is a binary operator, so it should only be used when you want to write something like $A\cup B$. If you want to perform such operation multiple time as our example, use `\bigcup` instead. Some other examples are:
+I sometimes saw something like $\cup_{i=1}^{\infty} X_i$ instead of $\bigcup\nolimits_{i=1}^\infty X_i$. Clearly, the latter one is preferred since `\cup` is a binary operator, so it should only be used when you want to write something like $A\cup B$. If you want to perform such operation multiple time as our example, use `\bigcup` instead. Below are some examples.
 
-* `\cap` v.s. `\bigcap` ($\cap$ v.s. $\bigcap$)
-* `\sqcup` v.s. `\bigsqcup` ($\sqcup$ v.s. $\bigsqcup$)
-* `\uplus` v.s. `\biguplus` ($\uplus$ v.s. $\biguplus$)
-* `\otimes` v.s. `\bigotimes` ($\otimes$ v.s. $\bigotimes$)
-* `\odot` v.s. `\bigodot` ($\odot$ v.s. $\bigodot$)
-* `\vee` v.s. `\bigvee` ($\vee$ v.s. $\bigvee$)
-* `\wedge` v.s. `\bigwedge` ($\wedge$ v.s. $\bigwedge$)
+| Operation      | Standard form         | Big form                    |
+| -------------- | --------------------- | --------------------------- |
+| Intersection   | $\cap$ (`\cap`)       | $\bigcap$ (`\bigcap`)       |
+| Disjoint union | $\sqcup$ (`\sqcup`)   | $\bigsqcup$ (`\bigsqcup`)   |
+| Tensor product | $\otimes$ (`\otimes`) | $\bigotimes$ (`\bigotimes`) |
+| Disjunction    | $\vee$ (`\vee`)       | $\bigvee$ (`\bigvee`)       |
+| Conjunction    | $\wedge$ (`\wedge`)   | $\bigwedge$ (`\bigwedge`)   |
 
 #### Else
 
