@@ -127,7 +127,7 @@ There are also commands which produce exactly the same output, but with differen
 
 #### Misused
 
-
+I sometimes saw somehting like $\cup_{i=1}^{\infty} X_i$ instead of $\bigcup_{i=1}^\infty X_i$. Clearly, the latter one is perferred.
 
 #### Else
 
