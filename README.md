@@ -190,6 +190,20 @@ To automatically resizing the brackets, and parentheses, we ust `\left...\right.
 
 $$N \coloneqq \left\vert\sum\limits_{j=1}^\infty\left(\sum\limits_{i=1}^\infty X_{ij}\right)\right\vert.$$
 
+Interesting enough, though this is already powerful, but there are more commands can be utilized. They are `\left.`/`\right.` and `\middle`. A typical usage for `\left.` or `\right.` is when you want to automatically resize an operator which only appears on one side. For example: 
+
+$$\left.\frac{x^3}{3}\right\vert_0^1$$
+
+whose source code being
+
+```latex
+\left.\frac{x^3}{3}\right|_0^1
+```
+
+And for `\middle`, you might have encountered the following situation:
+
+$$\Delta^n\coloneqq \left\{(t_0, \ldots, t_n)\in\mathbb{R}^{n+1}\middle\mid t_i\geq 0, \sum_{i}^{n}t_i=1\right\}$$
+
 
 
 #### Manual Sizing
