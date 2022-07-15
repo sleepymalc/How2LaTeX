@@ -20,3 +20,14 @@ This is one paragraph.
 This is another.
 ```
 
+I frequently saw the following:
+
+```latex
+This is one paragraph.\\
+
+This is another.
+```
+
+While `\\` will create a new line, hence start a new paragraph, but as we now know, if you already have a blank line between paragraphs, `\\` is redundant.
+
+## Math Environment
