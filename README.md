@@ -138,13 +138,13 @@ I sometimes saw something like $\cup_{i=1}^{\infty} X_i$ instead of $\bigcup\nol
 
 <div align="center">
 
-| Operation      | Standard form         | Big form                    |
-| -------------- | --------------------- | --------------------------- |
-| Intersection   | $\cap$ (`\cap`)       | $\bigcap$ (`\bigcap`)       |
-| Disjoint union | $\sqcup$ (`\sqcup`)   | $\bigsqcup$ (`\bigsqcup`)   |
-| Tensor product | $\otimes$ (`\otimes`) | $\bigotimes$ (`\bigotimes`) |
-| Disjunction    | $\vee$ (`\vee`)       | $\bigvee$ (`\bigvee`)       |
-| Conjunction    | $\wedge$ (`\wedge`)   | $\bigwedge$ (`\bigwedge`)   |
+| Operation      | Standard form code | Output    | Big form code | Output       |
+| -------------- | ------------------ | --------- | ------------- | ------------ |
+| Intersection   | `\cap`             | $\cap$    | `\bigcap`     | $\bigcap$    |
+| Disjoint union | `\sqcup`           | $\sqcup$  | `\bigsqcup`   | $\bigsqcup$  |
+| Tensor product | `\otimes`          | $\otimes$ | `\bigotimes`  | $\bigotimes$ |
+| Disjunction    | `\vee`             | $\vee$    | `\bigvee`     | $\bigvee$    |
+| Conjunction    | `\wedge`           | $\wedge$  | `\bigwedge`   | $\bigwedge$  |
 
 </div>
 
