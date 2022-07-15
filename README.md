@@ -119,7 +119,6 @@ Most of the time, when you're writing a math symbol with your direct keyboard in
 There are also commands which produce exactly the same output, but with different semantics. To keep the source code clean, we mention some of them.
 
 * `\rightarrow` v.s. `\to`
-  - 
 * `\leftarrow` v.s. `\gets`
 * `\Rightarrow` v.s. `\implies`
 * `\Leftarrow` v.s. `\impliesby`
