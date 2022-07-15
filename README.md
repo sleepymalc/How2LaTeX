@@ -1,5 +1,5 @@
 # How2LaTeX
-This is a quick guide for you to write $\LaTeX$ **professionally**. Throughout this tutorial, I assume you're familiar with basic $\LaTeX$ syntax and know how to do all the basic stuff, e.g., compiling, using `itemize`, `enumerate` environments.
+This is a quick guide to help you writing $\LaTeX$ in a **professional** way. Throughout this tutorial, I assume you're familiar with basic $\LaTeX$ syntax and know how to do all the basic stuff, e.g., compiling, using `itemize`, `enumerate` environments.
 
 For a more advanced $\LaTeX$ setup, please see my [VSCode-LaTeX-Inkscape](https://github.com/sleepymalc/VSCode-LaTeX-Inkscape) to typeset your $\LaTeX$ documents efficiently and also draw professionally.
 
