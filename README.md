@@ -161,7 +161,7 @@ with the source code being
 \]
 ```
 
- Before we talk about the sizing issue, we should first see the common command which causes this kind of problem.
+The size of the absolute value and the parenthesis are still in the default size, while the formula being wrapped is much higher than the default size. Before we talk about how to resolve this sizing issue, we should first see the common commands which will cause this kind of problem.
 
 * `||` (`\vert`)
 
@@ -181,7 +181,7 @@ with the source code being
 
 > Notice that in order to produce `{}`, we need to type `\{\}`.
 
-The size of the absolute value and the parenthesis are still in the default size, while the formula being wrapped is much higher than the default size. Let's see how we can fix this. 
+Let's see how we can fix this. 
 
 #### Automatic Sizing
 To automatically resize the brackets, and parentheses, we use `\left...\right...` to do this. For the above example, the resized formula should be
