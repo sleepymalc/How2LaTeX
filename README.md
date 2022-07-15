@@ -22,6 +22,7 @@ For a more advanced $\LaTeX$ setup, please see my [VSCode-LaTeX-Inkscape](https:
   + [Limits](#limits)
 * [Reference and Citation](#reference-and-citation)
 * [Else](#else-2)
+* [Further Reading](#further-reading)
 
 ## The Basic
 
@@ -349,3 +350,8 @@ instead of
 ```
 
 since we'll have some spacing issues if we go with the latter one.
+
+## Further Reading
+
+1. [CS 209. Mathematical Writing](https://jmlr.csail.mit.edu/reviewing-papers/knuth_mathematical_writing.pdf)
+2. 
