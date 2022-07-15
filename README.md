@@ -253,7 +253,7 @@ produces
 
 $$( \big( \Big( \bigg( \Bigg($$
 
-A particularly important use case is that, when you use `\underbrace`, the automatic resizing will be larger than expected. For example,
+A particularly important use case is that, when you use `\underbrace`, the automatic resizing will be **much larger** than expected. For example,
 
 $$\mathbb{E}\left\lbrack \underbrace{\prod_{i=0}^\infty X_i}\right\rbrack\text{ v.s. }\mathbb{E}\bigg[ \underbrace{\prod_{i=0}^{\infty} X_i}\bigg],$$ 
 
