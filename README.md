@@ -1,7 +1,6 @@
 # How2LaTeX
-This is a quick guide of writing $\LaTeX$ **CORRECTLY.** Throughout this tutorial, I assume you're familiar with basic $\LaTeX$ syntex and know how to do all the basic stuffs, e.g., compiling, using `itemize`, `enumerate` environments.
-
-For more advanced $\LaTeX$ setup, please see my [VSCode-LaTeX-Inkscape](https://github.com/sleepymalc/VSCode-LaTeX-Inkscape) setup for writing efficiently and also drawing professionally.
+This is a quick guide to writing $\LaTeX$ **CORRECTLY.** Throughout this tutorial, I assume you're familiar with basic $\LaTeX$ syntax and know how to do all the basic stuff, e.g., compiling, using `itemize`, `enumerate` environments.
+For a more advanced $\LaTeX$ setup, please see my [VSCode-LaTeX-Inkscape](https://github.com/sleepymalc/VSCode-LaTeX-Inkscape) setup for writing efficiently and also drawing professionally.
 
 ## The Basic
 
@@ -15,7 +14,7 @@ This is one paragraph.\\
 This is another.
 ```
 
-When writing paragraphs, $\LaTeX$ will wrap text in adjacent lines as if they were *part of the same paragraph*, while treat `\n` (i.e., newline symbol) as a sign for starting a new paragraph.
+When writing paragraphs, $\LaTeX$ will wrap text in adjacent lines as if they were *part of the same paragraph, while treating `\n` (i.e., newline symbol) as a sign for starting a new paragraph.
 
 ```latex
 This is 
@@ -42,13 +41,13 @@ As you know, `$...$` and `$$...$$` are two commonly used commands to write mathe
 
 $$e^{i\pi} + 1 = 0$$
 
-While the former is fine, but the latter one will cause some problems. The reason is that `$...$` and `$$...$$` are $\TeX$ commands, which is too old in some sense. A better way to write math equation is to use `\(...\)` and `\[...\]`, which is supported by modern $\LaTeX$.
+While the former is fine, the latter will cause some problems. The reason is that `$...$` and `$$...$$` are $\TeX$ commands, which is too old in some sense. A better way to write math equations is to use `\(...\)` and `\[...\]`, which is supported by modern $\LaTeX$.
 
 > While `equation*` environment is also an good option for not numbered equations, but I tend to keep things simple and unified. For numbered equation, `equation` and `align` environment should be used. We'll talk about referencing numbered equations later.
 
 ### Text in Math mode
 
-When you need to have some texts in your math equation, **please** use `\text{...}` wrapping your texts around. For examples,
+When you need to have some texts in your math equation, **please** use `\text{...}` wrapping your texts around. For example,
 
 ```latex
 \[
@@ -60,7 +59,7 @@ is a good example. Notice that you should always indent your text inside `\text{
 
 $$x_i\geq 0\text{for all}i,$$
 
-which is not desireable. 
+which is not desirable. 
 
 Also, you should always think twice when choosing between `\text{}` or `\mathrm{}`. They render the same output, but it's always a good habit (for others) to keep your source code clean. A quick guide is that when writing **text**, use `\text{}`, when writing **math shorthand**, use `\mathrm{}` instead. For example, if a variable $u_{\text{up}}$ has a flag `up`, you should write `u_{\text{up}}` instead of `u_{\mathrm{up}}` since `up` is a text. But if you're doing an integral, say 
 
@@ -76,7 +75,7 @@ Most of the time, when you're writing a math symbol with your direct keyboard in
 
 * `...` `(\ldots`): This is a straightforward one. Instead of writing `a_1, a_2, ...` for $a_1, a_2, \ldots$, write `a_2, a_2, \ldots` instead.
 
-  > There's something called `\cdots` also, which is my personal perferred one. If you really want to know about `...`, there are actually five types of them:
+  > There's something called `\cdots` also, which is my personal preferred one. If you really want to know about `...`, there are actually five types of them:
   >
   > | Code                  | Output                | Comment                                      |
   > | --------------------- | --------------------- | -------------------------------------------- |
@@ -92,7 +91,7 @@ Most of the time, when you're writing a math symbol with your direct keyboard in
 
 * `*` (`\ast`): When you need to render $x^\ast$, write `x^\ast` instead of simply `x*`.
 
-  > There are also somthing called `\star`, which produces $\star$. In some usecase, $x^\star$ may be desired.
+  > There are also something called `\star`, which produces $\star$. In some usecase, $x^\star$ may be desired.
 
 * `~` (`\sim`): This is often used when you want to say something like $x\sim \mathcal{N}(0 ,1)$, i.e., $x$ is sampled from a normal distribution. In this case, write `x\sim \mathcal{N}(0, 1)` instead of `x~ \mathcal{N}(0, 1)`.
 
@@ -110,11 +109,11 @@ There are also commands which produce exactly the same output, but with differen
 
 * `\leftarrow` v.s. `\gets` ($\leftarrow$): I use `\gets` when writing pseudocode, while `\leftarrow` for all other useages.
 
-* `\Rightarrow` v.s. `\implies` ($\Rightarrow$ v.s. $\implies$): I use `\implies` when writing proof, while `\Rightarrow` for all other usages.
+* `\Rightarrow` v.s. `\implies` ($\Rightarrow$ v.s. $\implies$): I use `\implies` when writing proofs, while `\Rightarrow` for all other usages.
 
-* `\Leftarrow` v.s. `\impliedby` ($\Leftarrow$ v.s. $\impliedby$): Similarly, I use `\impliedby` when writing proof, while `\Leftarrow` for all other usages.
+* `\Leftarrow` v.s. `\impliedby` ($\Leftarrow$ v.s. $\impliedby$): Similarly, I use `\impliedby` when writing proofs, while `\Leftarrow` for all other usages.
 
-* `\Leftrightarrow` v.s. `\iff` ($\Leftrightarrow$ v.s. $\iff$): Similarly, I use `\iff` when writing proof, while `\Leftrightarrow` for all other usages.
+* `\Leftrightarrow` v.s. `\iff` ($\Leftrightarrow$ v.s. $\iff$): Similarly, I use `\iff` when writing proofs, while `\Leftrightarrow` for all other usages.
 
   > Since `\implies`, `\impliedby`, and also `\iff` are quite long, so I redefined them into their corresponding ones for a more compact look. But in the code, I still type `\implies` when writing proof for a good semantic meaning. To redefine them, put
   >
@@ -124,11 +123,11 @@ There are also commands which produce exactly the same output, but with differen
   > \let\iff\Leftrightarrow
   > ```
   >
-  > into your premable.
+  > into your preamble.
 
 #### Misused
 
-I sometimes saw somehting like $\cup_{i=1}^{\infty} X_i$ instead of $\bigcup_{i=1}^\infty X_i$. Clearly, the latter one is perferred since `\cup` is a binary operator, so it should only be used when you want to write something like $A\cup B$. If you want to perform such operation multiple time as our example, use `\bigcup` instead. Some other examples are:
+I sometimes saw something like $\cup_{i=1}^{\infty} X_i$ instead of $\bigcup_{i=1}^\infty X_i$. Clearly, the latter one is preferred since `\cup` is a binary operator, so it should only be used when you want to write something like $A\cup B$. If you want to perform such operation multiple time as our example, use `\bigcup` instead. Some other examples are:
 
 * `\cap` v.s. `\bigcap` ($\cap$ v.s. $\bigcap$)
 * `\sqcup` v.s. `\bigsqcup` ($\sqcup$ v.s. $\bigsqcup$)
@@ -140,7 +139,7 @@ I sometimes saw somehting like $\cup_{i=1}^{\infty} X_i$ instead of $\bigcup_{i=
 
 #### Else
 
-Finally, there are a tricky one, the **empty set** symbol. you can either write `\emptyset` or `\varnothing`, which produces $\emptyset$ and $\varnothing$. Personally I prefer the latter one, but choose whatever you want.
+Finally, there is a tricky one, the **empty set** symbol. you can either write `\emptyset` or `\varnothing`, which produces $\emptyset$ and $\varnothing$. I prefer the latter one, but choose whatever you want.
 
 Also, it seems that not everyone knows the command `\ell` for producing a nice looking $\ell$, and instead, they simply type `l`, which produces $l$ instead.
 
@@ -158,7 +157,7 @@ with the source code being
 \]
 ```
 
- Before we talking about the sizing issue, we should first see the common command which causes this kind of problem.
+ Before we talk about the sizing issue, we should first see the common command which causes this kind of problem.
 
 * `||` (`\vert`)
 
@@ -178,11 +177,10 @@ with the source code being
 
 > Notice that in order to produce `{}`, we need to type `\{\}`.
 
-The size of the absolute value and the parenthesis are still in the defult size, while the formula being wrapped is much higher than the default size. Let's see how we can fix this. 
+The size of the absolute value and the parenthesis are still in the default size, while the formula being wrapped is much higher than the default size. Let's see how we can fix this. 
 
 #### Automatic Sizing
-
-To automatically resizing the brackets, and parentheses, we ust `\left...\right...` to do this. For the above example, the resized formula should be
+To automatically resize the brackets, and parentheses, we use `\left...\right...` to do this. For the above example, the resized formula should be
 
 ```latex
 \[
@@ -197,8 +195,7 @@ $$N \coloneqq \left\vert\sum\limits_{j=1}^\infty\left(\sum\limits_{i=1}^\infty X
 Interesting enough, though this is already powerful, but there are more commands can be utilized. They are `\left.`/`\right.` and `\middle`. A typical usage for `\left.` or `\right.` is when you want to automatically resize an operator which only appears on one side. For example:
 
 $$\left.\frac{x^2}{2}\right\vert_0^1$$
-
-whose source code being
+with the source code being
 
 ```latex
 \left.\frac{x^2}{2}\right|_0^1
@@ -234,7 +231,7 @@ A typical use case is that, `\left( k g(x) \right)` produces $\left( k g(x) \rig
 >
 > $$\mathbb{E}\left\lbrack \underbrace{\prod_{i=0}^\infty X_i}\right\rbrack\text{ v.s. }\mathbb{E}\bigg[ \underbrace{\prod_{i=0}^{\infty} X_i}\bigg],$$ 
 >
-> where I use `\left[ ... \right]` on the left and `\bigg[ ... \bigg]` on the right. Notice that we even haven't wrote anything under the braces, and the left one is already ugly.
+> where I use `\left[ ... \right]` on the left and `\bigg[ ... \bigg]` on the right. Notice that we even haven't written anything under the braces, and the left one is already ugly.
 
 #### Else
 
@@ -264,7 +261,7 @@ with the code being
 
 ### Spacing
 
-As we have seen before, when I type a indefinite integral, we have something like
+As we have seen before, when I type an indefinite integral, we have something like
 
 $$\int x\\,\mathrm{d}x$$
 
@@ -272,7 +269,7 @@ with the source code being `\int x\,\mathrm{d}x`. Notice that there's a `\,` bef
 
 $$\int x\mathrm{d}x,$$
 
-where $x^2\mathrm{d}x$ is now a single entity rather than independent ones. $\LaTeX$ provides several such commands to give you small indent.
+where $x^2\mathrm{d}x$ is now a single entity rather than two independent ones. $\LaTeX$ provides several such commands to give you a small indent.
 
 | Command | Description    | Size                 |
 | ------- | -------------- | -------------------- |
@@ -305,7 +302,7 @@ TODO
 
 ## Else
 
-Sometimes you may want to define your own operators. For examples, while there are a default `\ker` for producing the kernel of a function like $\ker(f)$, but there are no default `\im` for the image of a function. To do this, we should use
+Sometimes you may want to define your operators. For example, while there is a default `\ker` for producing the kernel of a function like $\ker(f)$, there is no default `\im` for the image of a function. To do this, we should use
 
 ```latex
 \DeclareMathOperator{\im}{Im}
