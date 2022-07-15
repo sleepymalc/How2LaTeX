@@ -264,7 +264,7 @@ with the code being
 
 As we have seen before, when I type a indefinite integral, we have something like
 
-$$\int x^2\,\mathrm{d}x$$
+$$\int x^2\\,\mathrm{d}x$$
 
 with the source code being `\int x^2\,\mathrm{d}x`. Notice that there's a `\,` before $\mathrm{d}x$, which gives us a small indent. since if we don't have this `\,`, we will end up with
 
