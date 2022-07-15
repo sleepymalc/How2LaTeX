@@ -337,7 +337,7 @@ Sometimes you may want to define your operators. For example, while there is a d
 \DeclareMathOperator{\im}{Im}
 ```
 
-not something like 
+instead of
 
 ```latex
 \newcommand{\im}{\mathrm{Im}}
