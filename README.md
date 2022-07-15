@@ -80,7 +80,8 @@ Most of the time, when you're writing a math symbol with your direct keyboard in
 * `...` `(\ldots`): This is a straightforward one. Instead of writing `a_1, a_2, ...` for $a_1, a_2, \ldots$, write `a_2, a_2, \ldots` instead.
 
   > There's something called `\cdots` also, which is my personal preferred one. If you really want to know about `...`, there are actually five types of them:
-  >
+  > <div align="center">
+  > 
   > | Code                  | Output                | Comment                                      |
   > | --------------------- | --------------------- | -------------------------------------------- |
   > | `A_1, A_2, \dotsc`    | $A_1, A_2, \dotsc$    | for **dots with commas**                     |
@@ -89,6 +90,8 @@ Most of the time, when you're writing a math symbol with your direct keyboard in
   > | `\int_{a}^{b} \dotsi` | $\int_{a}^{b} \dotsi$ | for **dots with integrals**                  |
   > | `A_1\dotso A_N`       | $A_1\dotso A_N$       | for **other dots**                           |
   >
+  > </div>
+  > 
   > The above is the conventions suggested by American Mathematical Society. If you don't want to follow them strictly, just choose one of them and stick with it.
 
 * `'` (`\prime`): When you need to render $x^\prime$, write `x^\prime` instead of simply `x'`.
@@ -133,6 +136,8 @@ There are also commands which produce exactly the same output, but with differen
 
 I sometimes saw something like $\cup_{i=1}^{\infty} X_i$ instead of $\bigcup\nolimits_{i=1}^\infty X_i$. Clearly, the latter one is preferred since `\cup` is a binary operator, so it should only be used when you want to write something like $A\cup B$. If you want to perform such operation multiple time as our example, use `\bigcup` instead. Below are some examples.
 
+<div align="center">
+
 | Operation      | Standard form         | Big form                    |
 | -------------- | --------------------- | --------------------------- |
 | Intersection   | $\cap$ (`\cap`)       | $\bigcap$ (`\bigcap`)       |
@@ -140,6 +145,8 @@ I sometimes saw something like $\cup_{i=1}^{\infty} X_i$ instead of $\bigcup\nol
 | Tensor product | $\otimes$ (`\otimes`) | $\bigotimes$ (`\bigotimes`) |
 | Disjunction    | $\vee$ (`\vee`)       | $\bigvee$ (`\bigvee`)       |
 | Conjunction    | $\wedge$ (`\wedge`)   | $\bigwedge$ (`\bigwedge`)   |
+
+</div>
 
 #### Else
 
@@ -269,12 +276,16 @@ $$\int x\mathrm{d}x,$$
 
 where $x^2\mathrm{d}x$ is now a single entity rather than two independent ones. $\LaTeX$ provides several such commands to give you a small indent.
 
+<div align="center">
+
 | Command | Description    | Size                 |
 | ------- | -------------- | -------------------- |
 | `\,`    | small space    | $3/18$ of a `\quad`  |
 | `\:`    | medium space   | $4/18$ of a `\quad`  |
 | `\;`    | large space    | $5/18$ of a `\quad`  |
 | `\!`    | negative space | $-3/18$ of a `\quad` |
+
+</div>
 
 > While `\quad` and `\qquad` are commonly used for spacing in every scenario, the above only works in math environments.
 
