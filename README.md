@@ -35,3 +35,13 @@ This is another.
 Hence, while `\\` will create a new line, hence start a new paragraph, but as we now know, if you already have a blank line between paragraphs, `\\` is redundant.
 
 ## Math Environment
+
+### Math mode
+
+As you know, `$...$` and `$$...$$` are two commonly used commands to write mathematical expression. For example, `$e^{i\pi} + 1 = 0$` produces $e^{i\pi} + 1 = 0$, while `$$e^{i\pi} + 1 = 0$$` produces
+
+$$e^{i\pi} + 1 = 0$$
+
+
+
+## Reference
