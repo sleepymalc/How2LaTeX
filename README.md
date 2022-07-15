@@ -85,7 +85,7 @@ $$x_i\geq 0\text{for all}i,$$
 
 which is not desirable since $\LaTeX$ will neglect any spacing in math mode.
 
-> If you write somehting like `$x y$`, you'll just get $x y$ instead of $x\; y$. More about spacing in Math mode later.
+> If you write somehting like `$x y$`, you'll just get $x y$ instead of $x\\; y$. More about spacing in Math mode later.
 
 Also, you should always think twice when choosing between `\text{}` or `\mathrm{}`. They render the same output, but it's always a good habit to keep your source code clean and **semantically correct**. A quick guide is that when writing **text**, use `\text{}`, when writing **math shorthand**, use `\mathrm{}` instead. For example, if a variable $u_{\text{up}}$ has a flag `up`, you should write `u_{\text{up}}` instead of `u_{\mathrm{up}}` since `up` is a text. But if you're doing an integral, say 
 
