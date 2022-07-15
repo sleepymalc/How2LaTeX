@@ -65,7 +65,7 @@ $$e^{i\pi} + 1 = 0.$$
 
 Both `$...$` and `$$...$$` are fine but this is why you should avoid them: they are $\TeX$ commands, which are **old** and causing problems. A better way to write math equations is to use `\(...\)` and `\[...\]`, which is supported by modern $\LaTeX$.
 
-> While `equation*` environment is also an good option for unnumbered equations, but I tend to keep things simple and unified. For numbered equations, `equation` and `align` environment should be used. We'll talk about referencing numbered equations later.
+> While `equation*` environment is also an good option for unnumbered equations, but I tend to keep things simple and unified. For numbered equations, `equation` and `align` environment should be used.
 
 ### Text in Math mode
 
