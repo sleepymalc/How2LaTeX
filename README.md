@@ -52,9 +52,12 @@ When you need to have some texts in your math equation, **please** use `\text{..
 
 ```latex
 \[
-	x_i \geq 0 \text{ for all }i
+	x_i \geq 0 \text{ for all }i,
 \]
 ```
+which produces
+
+$$x_i \geq 0 \text{ for all }i$$
 
 is a good example. Notice that you should always indent both sides of your text inside `\text{}`, otherwise you'll have something like 
 
