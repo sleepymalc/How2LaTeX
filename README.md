@@ -56,13 +56,13 @@ When you need to have some texts in your math equation, **please** use `\text{..
 \]
 ```
 
-is a good example. Notice that you should always indent your text inside `\text{}`, otherwise you'll have something like 
+is a good example. Notice that you should always indent both sides of your text inside `\text{}`, otherwise you'll have something like 
 
 $$x_i\geq 0\text{for all}i,$$
 
 which is not desirable. 
 
-Also, you should always think twice when choosing between `\text{}` or `\mathrm{}`. They render the same output, but it's always a good habit (for others) to keep your source code clean. A quick guide is that when writing **text**, use `\text{}`, when writing **math shorthand**, use `\mathrm{}` instead. For example, if a variable $u_{\text{up}}$ has a flag `up`, you should write `u_{\text{up}}` instead of `u_{\mathrm{up}}` since `up` is a text. But if you're doing an integral, say 
+Also, you should always think twice when choosing between `\text{}` or `\mathrm{}`. They render the same output, but it's always a good habit to keep your source code clean. A quick guide is that when writing **text**, use `\text{}`, when writing **math shorthand**, use `\mathrm{}` instead. For example, if a variable $u_{\text{up}}$ has a flag `up`, you should write `u_{\text{up}}` instead of `u_{\mathrm{up}}` since `up` is a text. But if you're doing an integral, say 
 
 $$\int x\\,\mathrm{d}x,$$
 
