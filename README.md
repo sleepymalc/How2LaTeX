@@ -290,7 +290,7 @@ instead. You can indeed put the subscript and supscript below/on the summation s
 >
 > But notice that `\limits` works differently with integral signs: It'll put the upper-bound directly on top of the integral sign, and the same is done for the lower-bound. For example: 
 >
-> $$\int_{a}^{b} x\mathrm{d}x\text{ v.s. }\int\limits_{a}^{b} x\mathrm{d}x.$$
+> $$\int_{a}^{b} x\\,\mathrm{d}x\text{ v.s. }\int\limits_{a}^{b} x\\,\mathrm{d}x.$$
 >
 > Notice that if you want to apply this to all your integral, please use `\usepackage[intlimits]{amsmath}` when loading `amsmath` package. This will only be applied when using integrals, since as mentioned, `\limits` with integral is treated differently.
 
