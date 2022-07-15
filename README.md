@@ -60,7 +60,9 @@ is a good example. Notice that you should always indent your text inside `\text{
 
 $$x_i\geq 0\text{for all}i,$$
 
-which is not desireable. Also, you should always think twice when choosing `\text{}` or `\mathrm{}`. They render the same output, but it's always a good habit (for others) to keep your source code clean. A quick guide is that when writing **text**, use `\text{}`, when writing math shorthand, use `\mathrm{}` instead. For example, if you want your variable $u$ to have a flag, say `up`, you should then write `$u_{\text{up}}$` instead of `$u_{\mathrm{up}}$` since `up` is a text. But if you're doing an integral, say 
+which is not desireable. 
+
+Also, you should always think twice when choosing `\text{}` or `\mathrm{}`. They render the same output, but it's always a good habit (for others) to keep your source code clean. A quick guide is that when writing **text**, use `\text{}`, when writing math shorthand, use `\mathrm{}` instead. For example, if you want your variable $u$ to have a flag, say `up`, you should then write `$u_{\text{up}}$` instead of `$u_{\mathrm{up}}$` since `up` is a text. But if you're doing an integral, say 
 
 $$\int x^2\mathrm{d}x,$$
 
