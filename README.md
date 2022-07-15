@@ -118,21 +118,53 @@ Most of the time, when you're writing a math symbol with your direct keyboard in
 
 There are also commands which produce exactly the same output, but with different semantics. To keep the source code clean, we mention some of them.
 
-* `\rightarrow` v.s. `\to`
-* `\leftarrow` v.s. `\gets`
-* `\Rightarrow` v.s. `\implies`
-* `\Leftarrow` v.s. `\impliesby`
-* `\Leftrightarrow` v.s. `\iff`
+* `\rightarrow` v.s. `\to` ($\rightarrow$)
+
+  I use `\to` for mapping, e.g. $f\colon X\to Y$, while `\rightarrow` for all other usages.
+
+* `\leftarrow` v.s. `\gets` ($\leftarrow$)
+
+  I use `\gets` when writing pseudocode, while `\leftarrow` for all other useages.
+
+* `\Rightarrow` v.s. `\implies` ($\Rightarrow$ v.s. $\implies$)
+
+  I use `\implies` when writing proof, while `\Rightarrow` for all other usages.
+
+* `\Leftarrow` v.s. `\impliedby` ($\Leftarrow$ v.s. $\impliedby$)
+
+  Similarly, I use `\impliedby` when writing proof, while `\Leftarrow` for all other usages.
+
+* `\Leftrightarrow` v.s. `\iff` ($\Leftrightarrow$ v.s. $\iff$)
+
+  Similarly, I use `\iff` when writing proof, while `\Leftrightarrow` for all other usages.
+
+  > Since `\implies`, `\impliedby`, and also `\iff` are quite long, so I redefined them into their corresponding ones for a more compact look. But in the code, I still type `\implies` when writing proof for a good semantic meaning. To redefine them, put
+  >
+  > ```latex
+  > \let\implies\Rightarrow
+  > \let\impliedby\Leftarrow
+  > \let\iff\Leftrightarrow
+  > ```
+  >
+  > into your premable.
 
 #### Misused
 
-I sometimes saw somehting like $\cup_{i=1}^{\infty} X_i$ instead of $\bigcup_{i=1}^\infty X_i$. Clearly, the latter one is perferred.
+I sometimes saw somehting like $\cup_{i=1}^{\infty} X_i$ instead of $\bigcup_{i=1}^\infty X_i$. Clearly, the latter one is perferred since `\cup` is a binary operator, so it should only be used when you want to write something like $A\cup B$. If you want to perform such operation multiple time as our example, use `\bigcup` instead. Some other examples are:
+
+* `\cap` v.s. `\bigcap` ($\cap$ v.s. $\bigcap$)
+* `\sqcup` v.s. `\bigsqcup` ($\sqcup$ v.s. $\bigsqcup$)
+* `\uplus` v.s. `\biguplus` ($\uplus$ v.s. $\biguplus$)
+* `\otimes` v.s. `\bigotimes` ($\otimes$ v.s. $\bigotimes$)
+* `\odot` v.s. `\bigodot` ($\odot$ v.s. $\bigodot$)
+* `\vee` v.s. `\bigvee` ($\vee$ v.s. $\bigvee$)
+* `\wedge` v.s. `\bigwedge` ($\wedge$ v.s. $\bigwedge$)
 
 #### Else
 
 Finally, there are a tricky one, the **empty set** symbol. you can either write `\emptyset` or `\varnothing`, which produces $\emptyset$ and $\varnothing$. Personally I prefer the latter one, but choose whatever you want.
 
-
+Also, it seems that not everyone knows the command `\ell` for producing a nice looking $\ell$, and instead, they simply type `l`, which produces $l$ instead.
 
 ### Sizing
 
