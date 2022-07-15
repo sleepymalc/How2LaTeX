@@ -62,7 +62,7 @@ which is not desireable.
 
 Also, you should always think twice when choosing between `\text{}` or `\mathrm{}`. They render the same output, but it's always a good habit (for others) to keep your source code clean. A quick guide is that when writing **text**, use `\text{}`, when writing **math shorthand**, use `\mathrm{}` instead. For example, if a variable $u_{\text{up}}$ has a flag `up`, you should write `u_{\text{up}}` instead of `u_{\mathrm{up}}` since `up` is a text. But if you're doing an integral, say 
 
-$$\int x^2\\,\mathrm{d}x,$$
+$$\int x\\,\mathrm{d}x,$$
 
 you should write `\int x^2 \,\mathrm{d}x` instead of `\int x^2 \,\text{d}x`.
 
@@ -192,14 +192,14 @@ To automatically resizing the brackets, and parentheses, we ust `\left...\right.
 
 $$N \coloneqq \left\vert\sum\limits_{j=1}^\infty\left(\sum\limits_{i=1}^\infty X_{ij}\right)\right\vert.$$
 
-Interesting enough, though this is already powerful, but there are more commands can be utilized. They are `\left.`/`\right.` and `\middle`. A typical usage for `\left.` or `\right.` is when you want to automatically resize an operator which only appears on one side. For example: 
+Interesting enough, though this is already powerful, but there are more commands can be utilized. They are `\left.`/`\right.` and `\middle`. A typical usage for `\left.` or `\right.` is when you want to automatically resize an operator which only appears on one side. For example:
 
-$$\left.\frac{x^3}{3}\right\vert_0^1$$
+$$\left.\frac{x^2}{2}\right\vert_0^1$$
 
 whose source code being
 
 ```latex
-\left.\frac{x^3}{3}\right|_0^1
+\left.\frac{x^2}{2}\right|_0^1
 ```
 
 And for `\middle`, you might have encountered the following situation:
@@ -264,11 +264,11 @@ with the code being
 
 As we have seen before, when I type a indefinite integral, we have something like
 
-$$\int x^2\\,\mathrm{d}x$$
+$$\int x\\,\mathrm{d}x$$
 
-with the source code being `\int x^2\,\mathrm{d}x`. Notice that there's a `\,` before $\mathrm{d}x$, which gives us a small indent. since if we don't have this `\,`, we will end up with
+with the source code being `\int x\,\mathrm{d}x`. Notice that there's a `\,` before $\mathrm{d}x$, which gives us a small indent. since if we don't have this `\,`, we will end up with
 
-$$\int x^2\mathrm{d}x,$$
+$$\int x\mathrm{d}x,$$
 
 where $x^2\mathrm{d}x$ is now a single entity rather than independent ones. $\LaTeX$ provides several such commands to give you small indent.
 
