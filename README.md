@@ -163,23 +163,17 @@ with the source code being
 
 The size of the absolute value and the parenthesis are still in the default size, while the formula being wrapped is much higher than the default size. Before we talk about how to resolve this sizing issue, we should first see the common commands which will cause this kind of problem.
 
-* `||` (`\vert`)
+* `|...|` (`\vert ... \vert`): This is a fun one, since we often use this to denote the absolute value like $\vert x \vert$. In this case, write `\vert x \vert` instead of `|x|`. 
 
-  This is a fun one, since we often use this to denote the absolute value like $\vert x \vert$. In this case, write `\vert x \vert` instead of `|x|`. 
-
-* `|| ||` (`\Vert` or `\|`)
-
-  For norm, write `\|x\|` instead of `||x||` for $\|x\|$.
+* `||...||` (`\lVert ... \rVert` or `\| ... \|`): For norm, write `\|x\|` instead of `||x||` for $\|x\|$.
 
   > We'll talk about this later. Notice that you can also write `\Vert x\Vert` for $\Vert x\Vert$, which is my preferred one.
 
-* `[]` (`\lbrack` and `\rbrack`)
+* `[...]` (`\lbrack ... \rbrack` or `[ ... ]`): They are indeed equivalent, so I prefer `[ ... ]` for simplicity.
 
-  > They are indeed equivalent, so I prefer `[]` for simplicity.
+* `<...>` (`\langle ... \rangle`)
 
-* `<>` (`\langle` and `\rangle`)
-
-> Notice that in order to produce `{}`, we need to type `\{\}`.
+* `{...}` (`\{ ... \}`)
 
 Let's see how we can fix this. 
 
