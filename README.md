@@ -3,6 +3,26 @@ This is a quick guide to help you write $\LaTeX$ in a **professional** way. Thro
 
 For a more advanced $\LaTeX$ setup, please see my [VSCode-LaTeX-Inkscape](https://github.com/sleepymalc/VSCode-LaTeX-Inkscape) to typeset your $\LaTeX$ documents efficiently and also draw professionally.
 
+## Table of Content
+
+* [The Basic](#the-basic)
+  + [Newline `\\`](#newline-----)
+* [Math Environment](#math-environment)
+  + [Math mode](#math-mode)
+  + [Text in Math mode](#text-in-math-mode)
+  + [Symbols](#symbols)
+    - [Semantic](#semantic)
+    - [Misused](#misused)
+    - [Else](#else)
+  + [Sizing](#sizing)
+    - [Automatic Sizing](#automatic-sizing)
+    - [Manual Sizing](#manual-sizing)
+    - [Else](#else-1)
+  + [Spacing](#spacing)
+  + [Limits](#limits)
+* [Reference and Citation](#reference-and-citation)
+* [Else](#else-2)
+
 ## The Basic
 
 ### Newline `\\`
@@ -52,7 +72,7 @@ When you need to have some texts in your math equation, **please** use `\text{..
 
 ```latex
 \[
-	x_i \geq 0 \text{ for all }i,
+	x_i \geq 0 \text{ for all } i,
 \]
 ```
 which produces
@@ -63,13 +83,15 @@ is a good example. Notice that you should always indent both sides of your text 
 
 $$x_i\geq 0\text{for all}i,$$
 
-which is not desirable. 
+which is not desirable since $\LaTeX$ will neglect any spacing in math mode.
+
+> If you write somehting like `$x y$`, you'll just get $x y$ instead of $x\; y$. More about spacing in Math mode later.
 
 Also, you should always think twice when choosing between `\text{}` or `\mathrm{}`. They render the same output, but it's always a good habit to keep your source code clean and **semantically correct**. A quick guide is that when writing **text**, use `\text{}`, when writing **math shorthand**, use `\mathrm{}` instead. For example, if a variable $u_{\text{up}}$ has a flag `up`, you should write `u_{\text{up}}` instead of `u_{\mathrm{up}}` since `up` is a text. But if you're doing an integral, say 
 
 $$\int x\\,\mathrm{d}x,$$
 
-you should write `\int x^2 \,\mathrm{d}x` instead of `\int x^2 \,\text{d}x`.
+you should write `\int x \,\mathrm{d}x` instead of `\int x \,\text{d}x`.
 
 ### Symbols
 
