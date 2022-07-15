@@ -337,10 +337,6 @@ instead. You can indeed put the subscript and supscript below/on the summation s
 >
 > Notice that if you want to apply this to all your integral, please use `\usepackage[intlimits]{amsmath}` when loading `amsmath` package. This will only be applied when using integrals, since as mentioned, `\limits` with integral is treated differently.
 
-## Reference and Citation
-
-> TODO
-
 ## Else
 
 Sometimes you may want to define your operators. For example, while there is a default `\ker` for producing the kernel of a function like $\ker(f)$, there is no default `\im` for the image of a function. To do this, we should use
