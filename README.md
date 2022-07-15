@@ -124,7 +124,7 @@ $$\sum_{i=1}^\infty x_i$$
 
 instead. You can indeed put the subscript and supscript below/on the summation symbol in inline math mode by using `\limits`. For example, $\sum\limits_{i=1}^\infty x_i$ by using `\sum\limits_{i=1}^\infty x_i`. This `\limits` command can be used in various scenarios, for examples, $\prod$, $\lim$, $\coprod$, or $\bigcup$ and $\bigcap$.
 
-> This indeed works for all **big** commands like $\int$, $\iint$, $\iiint$, $\iiiint$, $\oint$, $\idotsint$, $\bigodot$, $\bigoplus$, $\bigotimes$, $\bigvee$, $\bigwedge$, $\bigsqcup$, $\biguplus$. For example, $\bigoplus_{i=1}^\infty G_i$ v.s. $\bigoplus\limits_{i=1}^\infty G_i.$ But notice that `\limits` works differently with integral signs: It'll put the upperbound directly on top of the integral sign, and the same is done for the lower bound. For example: 
+> This indeed works for all **big** commands like $\int$, $\iint$, $\iiint$, $\iiiint$, $\oint$, $\idotsint$, $\bigodot$, $\bigoplus$, $\bigotimes$, $\bigvee$, $\bigwedge$, $\bigsqcup$, $\biguplus$. For example, $\bigoplus_{i=1}^\infty G_i$ v.s. $\bigoplus\limits_{i=1}^\infty G_i.$ But notice that `\limits` works differently with integral signs: It'll put the upper-bound directly on top of the integral sign, and the same is done for the lower-bound. For example: 
 >
 > $$\int_{a}^{b} x\mathrm{d}x\text{ v.s. }\int\limits_{a}^{b} x\mathrm{d}x.$$
 
