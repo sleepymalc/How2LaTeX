@@ -95,7 +95,7 @@ Most of the time, when you're writing a math symbol with your direct keyboard in
 
 * `*` (`\ast`): When you need to render $x^\ast$, write `x^\ast` instead of simply `x*`.
 
-  > There are also something called `\star`, which produces $\star$. In some usecase, $x^\star$ may be desired.
+  > There are also something called `\star`, which produces $\star$. In some cases, $x^\star$ may be desired.
 
 * `~` (`\sim`): This is often used when you want to say something like $x\sim \mathcal{N}(0 ,1)$, i.e., $x$ is sampled from a normal distribution. In this case, write `x\sim \mathcal{N}(0, 1)` instead of `x~ \mathcal{N}(0, 1)`.
 
