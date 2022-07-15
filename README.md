@@ -6,7 +6,7 @@ For a more advanced $\LaTeX$ setup, please see my [VSCode-LaTeX-Inkscape](https:
 
 ### Newline `\\`
 
-I frequently saw things like
+I often see things like
 
 ```latex
 This is one paragraph.\\
