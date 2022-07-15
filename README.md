@@ -40,9 +40,9 @@ Hence, while `\\` will create a new line and start a new paragraph, but as we no
 
 As you know, `$...$` and `$$...$$` are two commonly used commands to write mathematical expression. For example, `$e^{i\pi} + 1 = 0$` produces $e^{i\pi} + 1 = 0$, while `$$e^{i\pi} + 1 = 0$$` produces
 
-$$e^{i\pi} + 1 = 0$$
+$$e^{i\pi} + 1 = 0.$$
 
-While the former is fine, the latter will cause some problems. The reason is that `$...$` and `$$...$$` are $\TeX$ commands, which is too old in some sense. A better way to write math equations is to use `\(...\)` and `\[...\]`, which is supported by modern $\LaTeX$.
+Both `$...$` and `$$...$$` are fine by this is why you should avoid them: they are $\TeX$ commands, which is too old in some sense. A better way to write math equations is to use `\(...\)` and `\[...\]`, which is supported by modern $\LaTeX$.
 
 > While `equation*` environment is also an good option for not numbered equations, but I tend to keep things simple and unified. For numbered equation, `equation` and `align` environment should be used. We'll talk about referencing numbered equations later.
 
