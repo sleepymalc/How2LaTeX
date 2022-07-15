@@ -80,7 +80,17 @@ Most of the time, when you're writing a math symbol with your direct keyboard in
 
   This is a straightforward one. Instead of writing `a_1, a_2, ...` for $a_1, a_2, \ldots$, write `a_2, a_2, \ldots` instead.
 
-  > There's something called `\cdots` also, which is my personal perferred one.
+  > There's something called `\cdots` also, which is my personal perferred one. If you really want to know about `...`, there are actually five types of them:
+  >
+  > | Code                  | Output                | Comment                                      |
+  > | --------------------- | --------------------- | -------------------------------------------- |
+  > | `A_1, A_2, \dotsc`    | $A_1, A_2, \dotsc$    | for **dots with commas**                     |
+  > | `A_1 + \dotsb + A_N`  | $A_1 + \dotsb + A_N$  | for **dots with binary operators/relations** |
+  > | `A_1 \dotsm A_N`      | $A_1 \dotsm A_N$      | for **multipication dots**                   |
+  > | `\int_{a}^{b} \dotsi` | $\int_{a}^{b} \dotsi$ | for **dots with integrals**                  |
+  > | `A_1\dotso A_N`       | $A_1\dotso A_N$       | for **other dots**                           |
+  >
+  > The above is the conventions suggested by American Mathematical Society. If you don't want to follow them strictly, just choose one of them and stick with it.
 
 * `'` (`\prime`)
 
@@ -99,6 +109,31 @@ Most of the time, when you're writing a math symbol with your direct keyboard in
   A direct one. When you define a new symbol such as let $y\coloneqq x_1-x_2$, write `y\coloneqq x_1 - x_2` instead of `y:= x_1 - x_2`.
 
   > This need `\usepackage{mathtools}` in your header, namely you need `mathtools` package.
+
+* `>>`, `<<` (`\gg`, `\ll`)
+
+  Use `\gg` for much greater than and `\ll` for much less than instead of directly using `>>` and `<<`. The former ones produce $\gg$, $\ll$, while the latter ones produce $>>$ and $<<$.
+
+#### Semantic
+
+There are also commands which produce exactly the same output, but with different semantics. To keep the source code clean, we mention some of them.
+
+* `\rightarrow` v.s. `\to`
+  - 
+* `\leftarrow` v.s. `\gets`
+* `\Rightarrow` v.s. `\implies`
+* `\Leftarrow` v.s. `\impliesby`
+* `\Leftrightarrow` v.s. `\iff`
+
+#### Misused
+
+
+
+#### Else
+
+Finally, there are a tricky one, the **empty set** symbol. you can either write `\emptyset` or `\varnothing`, which produces $\emptyset$ and $\varnothing$. Personally I prefer the latter one, but choose whatever you want.
+
+
 
 ### Sizing
 
