@@ -13,8 +13,6 @@ This is one paragraph.\\
 This is another.
 ```
 
----
-
 When writing paragraphs, $\LaTeX$ will wrap text in adjacent lines as if they were *part of the same paragraph*, while treat `\n` (i.e., newline symbol) as a sign for starting a new paragraph.
 
 ```latex
@@ -64,9 +62,9 @@ which is not desireable.
 
 Also, you should always think twice when choosing between `\text{}` or `\mathrm{}`. They render the same output, but it's always a good habit (for others) to keep your source code clean. A quick guide is that when writing **text**, use `\text{}`, when writing **math shorthand**, use `\mathrm{}` instead. For example, if a variable $u_{\text{up}}$ has a flag `up`, you should write `u_{\text{up}}` instead of `u_{\mathrm{up}}` since `up` is a text. But if you're doing an integral, say 
 
-$$\int x^2\mathrm{d}x,$$
+$$\int x^2\,\mathrm{d}x,$$
 
-you should write `\int x^2 \mathrm{d}x` instead of `\int x^2 \text{d}x`.
+you should write `\int x^2 \,\mathrm{d}x` instead of `\int x^2 \,\text{d}x`.
 
 ### Symbols
 
@@ -258,13 +256,30 @@ with the code being
 
 ```latex
 \[
-	x = a_0 + \cfrac{1}{a_1 + \cfrac{1}{a_2 + \cfrac{1}{a_3 + \cfrac{1}{a_4} } } }
+	x = a_0 + \cfrac{1}{a_1 + \cfrac{1}{a_2 + \cfrac{1}{a_3 + \cfrac{1}{a_4} } } }.
 \]
 ```
 
-
-
 ### Spacing
+
+As we have seen before, when I type a indefinite integral, we have something like
+
+$$\int x^2\,\mathrm{d}x$$
+
+with the source code being `\int x^2\,\mathrm{d}x`. Notice that there's a `\,` before $\mathrm{d}x$, which gives us a small indent. since if we don't have this `\,`, we will end up with
+
+$$\int x^2\mathrm{d}x,$$
+
+where $x^2\mathrm{d}x$ is now a single entity rather than independent ones. $\LaTeX$ provides several such commands to give you small indent.
+
+| Command | Description    | Size                 |
+| ------- | -------------- | -------------------- |
+| `\,`    | small space    | $3/18$ of a `\quad`  |
+| `\:`    | medium space   | $4/18$ of a `\quad`  |
+| `\;`    | large space    | $5/18$ of a `\quad`  |
+| `\!`    | negative space | $-3/18$ of a `\quad` |
+
+> While `\quad` and `\qquad` are commonly used for spacing in every scenario, the above only works in math environments.
 
 ### Limits
 
@@ -283,3 +298,21 @@ instead. You can indeed put the subscript and supscript below/on the summation s
 > Notice that if you want to apply this to all your integral, please use `\usepackage[intlimits]{amsmath}` when loading `amsmath` package. This will only be applied when using integrals, since as mentioned, `\limits` with integral is treated differently.
 
 ## Reference
+
+TODO
+
+## Else
+
+Sometimes you may want to define your own operators. For examples, while there are a default `\ker` for producing the kernel of a function like $\ker(f)$, but there are no default `\im` for the image of a function. To do this, we should use
+
+```latex
+\DeclareMathOperator{\im}{Im}
+```
+
+not something like 
+
+```latex
+\newcommand{\im}{\mathrm{Im}}
+```
+
+since we'll have some spacing issues if we go with the latter one.
