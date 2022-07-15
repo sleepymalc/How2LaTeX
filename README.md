@@ -354,4 +354,4 @@ since we'll have some spacing issues if we go with the latter one.
 ## Further Reading
 
 1. [CS 209. Mathematical Writing](https://jmlr.csail.mit.edu/reviewing-papers/knuth_mathematical_writing.pdf)
-2. 
+2. [Wikibooks: LaTeX/Mathematics](https://en.wikibooks.org/wiki/LaTeX/Mathematics)
