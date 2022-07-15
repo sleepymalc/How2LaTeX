@@ -15,7 +15,7 @@ This is one paragraph.\\
 This is another.
 ```
 
-When writing paragraphs, $\LaTeX$ will wrap text in adjacent lines as if they were *part of the same paragraph, while treating `\n` (i.e., newline symbol) as a sign for starting a new paragraph.
+When writing paragraphs, $\LaTeX$ will wrap text in adjacent lines as if they were *part of the same paragraph*, while treating `\n` (i.e., newline symbol) as a sign for starting a new paragraph.
 
 ```latex
 This is 
