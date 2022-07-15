@@ -226,7 +226,7 @@ produces
 
 $$( \big( \Big( \bigg( \Bigg($$
 
-
+A typical use case is that, `\left( k g(x) \right)` produces $\left( k g(x) \right)$, while `\left` and `\right` produce the same size delimiters as those nested within it. In this case, we can use `\big( k g(x) \big)`, which produces $\big( k g(x) \big)$ to further distinguish the nested parentheses.
 
 ### Limits
 
