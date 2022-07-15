@@ -73,7 +73,7 @@ you should write `\int x^2 \,\mathrm{d}x` instead of `\int x^2 \,\text{d}x`.
 
 ### Symbols
 
-Most of the time, when you're writing a math symbol with your direct keyboard input, there's a command in $\LaTeX$ instead. Here is a short list of them:
+Most of the time, when you're writing a math symbol with your direct keyboard input, there's a corresponding command in $\LaTeX$ as well. Here is a short list of them:
 
 * `:` (`\colon`): Instead of writing `f:X\to Y` for $f:X\to Y$, write `f\colon X\to Y` instead.
 
