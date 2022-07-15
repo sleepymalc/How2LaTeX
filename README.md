@@ -146,9 +146,11 @@ Also, it seems that not everyone knows the command `\ell` for producing a nice l
 
 ### Sizing
 
-#### Brackets, Braces
+The most painful thing when I read a $\LaTeX$ document is when seeing something like 
 
-We first note that there are some commonly misused symbols for different kinds of brackets and braces as follows.
+$$N \coloneqq \vert\sum\limits_{j=1}^\infty(\sum\limits_{i=1}^\infty X_{ij})\vert.$$
+
+with the source code being `N \coloneqq \vert\sum\limits_{j=1}^\infty(\sum\limits_{i=1}^\infty X_{ij})\vert` Before we talking about the sizing issue, we should first see the common command which causes this kind of problem.
 
 * `||` (`\vert`)
 
@@ -164,7 +166,13 @@ We first note that there are some commonly misused symbols for different kinds o
 
 * `<>` (`\langle` and `\rangle`)
 
+The size of the absolute value and the parenthesis are still in the defult size, while the formula being wrapped is much higher than the default size. Let's see how we can fix this. 
+
 #### Automatic Sizing
+
+To automatically resizing the brackets, and parentheses, we ust `\left...\right...` to do this. For the above example, the resized formula should be  `N \coloneqq \left\vert\sum\limits_{j=1}^\infty\left(\sum\limits_{i=1}^\infty X_{ij}\right)\right\vert`, which produces
+
+$$N \coloneqq \left\vert\sum\limits_{j=1}^\infty\left(\sum\limits_{i=1}^\infty X_{ij}\right)\right\vert.$$
 
 
 
