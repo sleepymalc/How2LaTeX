@@ -36,7 +36,7 @@ This is one paragraph.\\
 This is another.
 ```
 
-The command `\\` will produce a _line break_, i.e., will end the current line and start a new one. This is different from a paragraph, as **the start of paragraphs is usually indented**. That is to say, if we write
+The command `\\` will produce a *line break*, i.e., will end the current line and start a new one. This is different from a paragraph, as **the start of paragraphs is usually indented**. So if we write
 
 ```latex
 This is one paragraph.\\ This is still in the paragraph!
@@ -53,7 +53,7 @@ This is still in one paragraph!
   This is another.
 ```
 
-Notice the indention at the start of the two paragraphs, while there is no indention on that new line since we only introduce a line break, which will not start a new paragraph. So basically, $\LaTeX$ will wrap text in adjacent lines as if they were *part of the same paragraph*, while treating `\n` (i.e., newline symbol) as a sign for starting a new paragraph. So, with the following input:
+Notice the indention at the start of the two paragraphs, while there is no indention on that new line since we only introduce a line break, which will not start a new paragraph. So basically, $\LaTeX$ will wrap text in adjacent lines as if they were *part of the same paragraph* while treating `\n` (i.e., newline symbol) as a sign for starting a new paragraph. So, with the following input:
 
 ```latex
 This is 
@@ -62,7 +62,7 @@ one paragraph
 This is another.
 ```
 
-the output will be like:
+the output will be like this:
 
 ```bash
 This is one paragraph.
@@ -70,7 +70,7 @@ This is one paragraph.
 This is another.
 ```
 
-Hence, as we saw before, while `\\` will force a new line, but if you already have a blank line between paragraphs, `\\` is redundant. And I don't recommand you to manually insert line break in your paragraph to do auto adjusting.
+Hence, while `\\` will force a new line and if you already have a blank line between paragraphs, `\\` is redundant. And I don't recommend you to manually insert a line break in your paragraph to do auto adjusting.
 
 ## Math Environment
 
@@ -103,7 +103,7 @@ $$x_i\geq 0\text{for all}i,$$
 
 which is not desirable.
 
-> This is because $\LaTeX$ will neglect any spacing in math mode. In other words, if you write somehting like `$x y$`, you'll just get $x y$ instead of $x\\; y$. More about spacing in Math mode later.
+> This is because $\LaTeX$ will neglect any spacing in math mode. In other words, if you write something like `$x y$`, you'll just get $x y$ instead of $x\\; y$. More about spacing in Math mode later.
 
 Also, you should always think twice when choosing between `\text{}` or `\mathrm{}`. They render the same output, but it's always a good habit to keep your source code clean and **semantically correct**. A quick guide is that when writing **text**, use `\text{}`, when writing **math shorthand**, use `\mathrm{}` instead. For example, if a variable $u_{\text{up}}$ has a flag `up`, you should write `u_{\text{up}}` instead of `u_{\mathrm{up}}` since `up` is a text. But if you're doing an integral, say 
 
@@ -174,7 +174,7 @@ There are also commands which produce exactly the same output, but with differen
 
 #### Misused
 
-I sometimes see things like $\cup_{i=1}^{\infty} X_i$ instead of $\bigcup\nolimits_{i=1}^\infty X_i$. Clearly, the latter one is preferred since `\cup` is a binary operator, so it should only be used when you want to write something like $A\cup B$. If you want to perform such an operation multiple times as in our example, use `\bigcup` instead. Below are some examples.
+I sometimes see things like $\cup_{i=1}^{\infty} X_i$ instead of $\bigcup\nolimits_{i=1}^\infty X_i$. The latter one is preferred since `\cup` is a binary operator, so it should only be used when you want to write something like $A\cup B$. If you want to perform such an operation multiple times as in our example, use `\bigcup` instead. Below are some examples.
 
 <div align="center">
 
