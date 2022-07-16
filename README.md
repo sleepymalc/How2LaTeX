@@ -6,16 +6,22 @@ For a more advanced $\LaTeX$ setup, please see my [VSCode-LaTeX-Inkscape](https:
 ## Table of Content
 
 * [The Basic](#the-basic)
-  + [Newline `\\`](#newline-----)
+  + [Newline and Paragraph](#newline-and-paragraph)
 * [Math Environment](#math-environment)
   + [Math mode](#math-mode)
   + [Text in Math mode](#text-in-math-mode)
   + [Symbols](#symbols)
-  + [Sizing of Brackets, Parentheses, etc.](#sizing-of-brackets-parentheses-etc)
+    - [Semantic](#semantic)
+    - [Misused](#misused)
+    - [Else](#else)
+  + [Sizing of Brackets, Parentheses, etc.](#sizing-of-brackets--parentheses--etc)
+    - [Automatic Sizing](#automatic-sizing)
+    - [Manual Sizing](#manual-sizing)
   + [Spacing](#spacing)
   + [Limits](#limits)
-* [Reference and Citation](#reference-and-citation)
-* [Else](#else-2)
+* [Else](#else-1)
+  + [Sizing](#sizing)
+  + [Self-defined Commands](#self-defined-commands)
 * [Further Reading](#further-reading)
 
 ## The Basic
@@ -279,34 +285,6 @@ where I use `\left[ ... \right]` on the left and `\bigg[ ... \bigg]` on the righ
 
 Another use case is that, `\left( k g(x) \right)` produces $\left( k g(x) \right)$, while `\left` and `\right` produce the same size delimiters as those nested within it. In this case, we can use `\big( k g(x) \big)`, which produces $\big( k g(x) \big)$ to further distinguish the nested parentheses.
 
-#### Else
-
-Another thing relates to the sizing is the way of handling **continued fractions**. If we use `\frac{}{}` throughout, we'll have something like
-
-$$x = a_0 + \frac{1}{a_1 + \frac{1}{a_2 + \frac{1}{a_3 + \frac{1}{a_4} } } }$$
-
-with the code being
-
-```latex
-\[
-  x = a_0 + \frac{1}{a_1 + \frac{1}{a_2 + \frac{1}{a_3 + \frac{1}{a_4} } } }
-\]
-```
-
-which is ugly. Instead, we use `\cfrac{}{}`, where that extra `c` stands for `continued`. In this case, we have
-
-$$x = a_0 + \cfrac{1}{a_1 + \cfrac{1}{a_2 + \cfrac{1}{a_3 + \cfrac{1}{a_4} } } },$$
-
-with the code being
-
-```latex
-\[
-  x = a_0 + \cfrac{1}{a_1 + \cfrac{1}{a_2 + \cfrac{1}{a_3 + \cfrac{1}{a_4} } } }.
-\]
-```
-
-We see that with `\cfrac{}{}`, the equation is spaced more equally in the vertical direction, hence it's clearer.
-
 ### Spacing
 
 As we have seen before, when I type an indefinite integral, we have something like
@@ -349,6 +327,36 @@ instead. You can indeed put the subscript and supscript below/on the summation s
 > Notice that if you want to apply this to all your integral, please use `\usepackage[intlimits]{amsmath}` when loading `amsmath` package. This will only be applied when using integrals, since as mentioned, `\limits` with integral is treated differently.
 
 ## Else
+
+### Sizing
+
+Another thing relates to the sizing is the way of handling **continued fractions**. If we use `\frac{}{}` throughout, we'll have something like
+
+$$x = a_0 + \frac{1}{a_1 + \frac{1}{a_2 + \frac{1}{a_3 + \frac{1}{a_4} } } }$$
+
+with the code being
+
+```latex
+\[
+  x = a_0 + \frac{1}{a_1 + \frac{1}{a_2 + \frac{1}{a_3 + \frac{1}{a_4} } } }
+\]
+```
+
+which is ugly. Instead, we use `\cfrac{}{}`, where that extra `c` stands for `continued`. In this case, we have
+
+$$x = a_0 + \cfrac{1}{a_1 + \cfrac{1}{a_2 + \cfrac{1}{a_3 + \cfrac{1}{a_4} } } },$$
+
+with the code being
+
+```latex
+\[
+  x = a_0 + \cfrac{1}{a_1 + \cfrac{1}{a_2 + \cfrac{1}{a_3 + \cfrac{1}{a_4} } } }.
+\]
+```
+
+We see that with `\cfrac{}{}`, the equation is spaced more equally in the vertical direction, hence it's clearer.
+
+### Self-defined Commands
 
 Sometimes you may want to define your operators. For example, while there is a default `\ker` for producing the kernel of a function like $\ker(f)$, there is no default `\im` for the image of a function. To do this, we should use
 
