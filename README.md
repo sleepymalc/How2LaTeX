@@ -20,7 +20,7 @@ For a more advanced $\LaTeX$ setup, please see my [VSCode-LaTeX-Inkscape](https:
   + [Spacing](#spacing)
   + [Limits](#limits)
 * [Else](#else-1)
-  + [Sizing](#sizing)
+  + [Continued Fractions](#continued-fractions)
   + [Self-defined Commands](#self-defined-commands)
 * [Further Reading](#further-reading)
 
@@ -328,7 +328,7 @@ instead. You can indeed put the subscript and supscript below/on the summation s
 
 ## Else
 
-### Sizing
+### Continued Fractions
 
 Another thing relates to the sizing is the way of handling **continued fractions**. If we use `\frac{}{}` throughout, we'll have something like
 
