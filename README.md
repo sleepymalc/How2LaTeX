@@ -330,7 +330,7 @@ instead. You can indeed put the subscript and supscript below/on the summation s
 
 ### Continued Fractions
 
-Another thing relates to the sizing is the way of handling **continued fractions**. If we use `\frac{}{}` throughout, we'll have something like
+One important thing relates to sizing but neglect by lots of people is the way of handling **continued fractions**. If we use `\frac{}{}` throughout, we'll have something like
 
 $$x = a_0 + \frac{1}{a_1 + \frac{1}{a_2 + \frac{1}{a_3 + \frac{1}{a_4} } } }$$
 
