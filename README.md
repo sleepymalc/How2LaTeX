@@ -9,7 +9,8 @@ Also, you may notice that lots of commands I tend to use are rather *long*, this
 ## Table of Content
 
 * [The Basic](#the-basic)
-  + [Newline and Paragraph](#newline-and-paragraph)
+  + [Newline `\\`](#newline-----)
+  + [Paragraph `\par`](#paragraph---par-)
 * [Math Environment](#math-environment)
   + [Math mode](#math-mode)
   + [Text in Math mode](#text-in-math-mode)
@@ -17,7 +18,7 @@ Also, you may notice that lots of commands I tend to use are rather *long*, this
     - [Semantic](#semantic)
     - [Misused](#misused)
     - [Else](#else)
-  + [Brackets, Parentheses, etc.](#brackets-parentheses-etc)
+  + [Brackets, Parentheses, etc.](#brackets--parentheses--etc)
     - [Automatic Sizing](#automatic-sizing)
     - [Manual Sizing](#manual-sizing)
   + [Spacing](#spacing)
