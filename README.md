@@ -1,7 +1,10 @@
 # How2LaTeX
 This is a quick guide to help you write $\LaTeX$ in a **professional** way. Throughout this tutorial, I assume you're familiar with the basic $\LaTeX$ syntax and know how to do all the basic stuff, e.g., compiling, using `itemize`, `enumerate` environments, etc.
 
-For a more advanced $\LaTeX$ setup, please see my [VSCode-LaTeX-Inkscape](https://github.com/sleepymalc/VSCode-LaTeX-Inkscape) to typeset your $\LaTeX$ documents efficiently and also draw professionally.
+## Disclaimer
+I'm not writing this guide to tell you how to write $\LaTeX$ **correctlly**, instead, I'm trying to convey you that you should write $\LaTeX$ as professional as possible so someone with lots of experience with $\LaTeX$ can't nitpick you.
+
+Also, you may find out that lots of commands I tend to use is rather *long*, this is because **I don't actually need to type out all these**: I use [hsnips](https://github.com/draivin/hsnips) in particular, which allows me to type my self-defined character and expend automatically. For a more advanced $\LaTeX$ setup like this, please see [VSCode-LaTeX-Inkscape](https://github.com/sleepymalc/VSCode-LaTeX-Inkscape).
 
 ## Table of Content
 
