@@ -11,13 +11,7 @@ For a more advanced $\LaTeX$ setup, please see my [VSCode-LaTeX-Inkscape](https:
   + [Math mode](#math-mode)
   + [Text in Math mode](#text-in-math-mode)
   + [Symbols](#symbols)
-    - [Semantic](#semantic)
-    - [Misused](#misused)
-    - [Else](#else)
-  + [Sizing](#sizing)
-    - [Automatic Sizing](#automatic-sizing)
-    - [Manual Sizing](#manual-sizing)
-    - [Else](#else-1)
+  + [Sizing of Brackets, Parentheses, etc.](#sizing-of-brackets-parentheses-etc)
   + [Spacing](#spacing)
   + [Limits](#limits)
 * [Reference and Citation](#reference-and-citation)
@@ -195,7 +189,7 @@ There are two symbols I want to mention, the **empty set** symbol and **l** (ell
 * You can either write `\emptyset` or `\varnothing` to denote an empty set, which produces $\emptyset$ and $\varnothing$. I prefer the latter one, but choose whatever you want. 
 * On the other hand, it seems like not everyone knows the command `\ell` for producing a nice looking $\ell$, and instead, they simply type `l`, which produces $l$. Not sure whether they're intended, but this is something worth mentioning.
 
-### Sizing
+### Sizing of Brackets, Parentheses, etc.
 
 The most painful thing when I read a $\LaTeX$ document is when seeing something like 
 
