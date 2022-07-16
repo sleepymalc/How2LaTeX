@@ -61,6 +61,7 @@ Notice the indention at the start of the two paragraphs, while there is no inden
 ```latex
 This is 
 one paragraph
+
 This is another.
 ```
 
@@ -185,25 +186,25 @@ Most of the time, when you're writing a math symbol with your direct keyboard in
   > 
   > The above is the conventions suggested by American Mathematical Society. If you don't want to follow them strictly, just choose one of them and stick with it.
 
-* `'` (`\prime`): When you need to render $x^\prime$, write `x^\prime` instead of simply `x'`.
-
-  > There exists some pathological examples like ${x^\prime}^\prime$ v.s. ${x'}^{'}$.
-
-* `^*` (`^\ast`): When you need to render $x^\ast$, write `x^\ast` instead of simply `x^*`.
-
-  > There are also something called `\star`, which produces $\star$. In some cases, $x^\star$ may be desired.
-
-* `~` (`\sim`): This is often used when you want to say something like $x\sim \mathcal{N}(0 ,1)$, i.e., $x$ is sampled from a normal distribution. In this case, write `x \sim \mathcal{N}(0, 1)` instead of `x ~ \mathcal{N}(0, 1)`.
-
 * `:=`, `=:` (`\coloneqq`, `\eqqcolon`): Another direct one. When you define a new symbol such as let $y\coloneqq x_1-x_2$, write `y \coloneqq x_1 - x_2` instead of `y := x_1 - x_2`.
 
   > You need to put `\usepackage{mathtools}` in your header, namely you need the `mathtools` package.
 
 * `>>`, `<<` (`\gg`, `\ll`): Use `\gg` for much greater than and `\ll` for much less than instead of directly using `>>` and `<<`. The former ones produce $\gg$, $\ll$, while the latter ones produce $>>$ and $<<$.
 
+Also, there are some symbols is by default equivalent to your direct keyboard output.
+
+* `'` (`\prime`):  `x'` is equivalent to `x^\prime`.
+
+  > There exists some pathological examples like ${x^\prime}^\prime$ v.s. ${x'}^{'}$. But for usual cases, $x'$ is equivalent to $x^\prime$, and indeed if you write `x''`, $\LaTeX$ renders this as `x^{\prime\prime}` as $x''$ and so on. I personally perfer to use `^\prime` since in this way I get a full control of my output.
+
+* `*` (`\ast`): `*` is equivalent to `\ast`.
+
+  > There are also something called `\star`, which produces $\star$. In some cases, $x^\star$ may be desired. For me, I prefer to use `\ast` whenever I want to render $x^\ast$. This is because I generally regard `*` as an operator, which can mean convolution for example. And to mark a variable, I think `^\ast` is a better touch.
+
 #### Semantic
 
-There are also commands which produce exactly the same output, but with different semantics. To keep the source code clean, we mention some of them.
+There are also commands which produce very similar output (or even exactly the same), but with different semantics. To keep the source code clean, we mention some of them.
 
 * `\rightarrow` v.s. `\to` ($\rightarrow$): I use `\to` for mapping, e.g. $f\colon X\to Y$, while `\rightarrow` for all other cases.
 
@@ -223,7 +224,7 @@ There are also commands which produce exactly the same output, but with differen
   > \let\iff\Leftrightarrow
   > ```
   >
-  > into your preamble.
+  > into your preamble. This makes `\implies`, `\impliedby` and `\iff` shorter and in my opinion has a better look.
 
 #### Misused
 
@@ -264,11 +265,13 @@ with the source code being
 
 The size of the absolute value and the parenthesis are still in the default size, while the formula being wrapped is much higher than the default size. Before we talk about how to resolve this sizing issue, we should first see the common commands which will cause this kind of problem.
 
-* `|...|` (`\vert ... \vert`): This is a fun one since we often use this to denote the absolute value like $\vert x \vert$. In this case, write `\vert x \vert` instead of `|x|`. 
+* `|...|` (`\lvert ... \rvert`): This is a fun one since we often use this to denote the absolute value like $\lvert x \rvert$. In this case, write `\lvert x \rvert` instead of `|x|`.
+
+  >  Indeed, there are somehting called `\vert`, which is synonym to `|`, and [amsmath](https://ctan.org/pkg/amsmath?lang=en) recommends to use `\lvert ...\rvert` for absolute value.
 
 * `||...||` (`\lVert ... \rVert` or `\| ... \|`): For norm, write `\|x\|` instead of `||x||` for $\lVert x\rVert$.
 
-  > We'll talk about this later. Notice that you can also write `\Vert x \Vert` for $\Vert x\Vert$, though I still prefer `\lVert x \rVert`.
+  > We'll talk about this later. Notice that you can also write `\Vert x \Vert` for $\Vert x\Vert$, though I still prefer `\lVert x \rVert` from the very same reason with `\lvert ... \rvert`.
 
 * `[...]` (`\lbrack ... \rbrack` or `[ ... ]`): They are indeed equivalent, so I prefer `[ ... ]` for simplicity.
 
