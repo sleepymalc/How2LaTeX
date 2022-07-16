@@ -68,9 +68,9 @@ This is another.
 the output will be like this:
 
 ```bash
-This is one paragraph.
+  This is one paragraph.
 
-This is another.
+  This is another.
 ```
 
 Hence, while `\\` will force a new line and if you already have a blank line between paragraphs, `\\` is redundant. And I don't recommend you to manually insert a line break in your paragraph to do auto adjusting.
