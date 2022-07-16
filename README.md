@@ -9,8 +9,8 @@ Also, you may notice that lots of commands I tend to use are rather *long*, this
 ## Table of Content
 
 * [The Basic](#the-basic)
-  + [Newline `\\`](#newline-----)
-  + [Paragraph `\par`](#paragraph---par-)
+  + [Newline `\\`](#newline-)
+  + [Paragraph `\par`](#paragraph-par)
 * [Math Environment](#math-environment)
   + [Math mode](#math-mode)
   + [Text in Math mode](#text-in-math-mode)
