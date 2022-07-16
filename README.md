@@ -265,19 +265,19 @@ with the source code being
 
 The size of the absolute value and the parenthesis are still in the default size, while the formula being wrapped is much higher than the default size. Before we talk about how to resolve this sizing issue, we should first see the common commands which will cause this kind of problem.
 
-* `|...|` (`\lvert ... \rvert`): This is a fun one since we often use this to denote the absolute value like $\lvert x \rvert$. In this case, write `\lvert x \rvert` instead of `|x|`.
+* $\lvert \ldots \rvert$ (`\lvert ... \rvert`): This is a fun one since we often use this to denote the absolute value like $\lvert x \rvert$. In this case, write `\lvert x \rvert` instead of `|x|`.
 
   >  Indeed, there are somehting called `\vert`, which is synonym to `|`, and [amsmath](https://ctan.org/pkg/amsmath?lang=en) recommends to use `\lvert ...\rvert` for absolute value.
 
-* `||...||` (`\lVert ... \rVert` or `\| ... \|`): For norm, write `\|x\|` instead of `||x||` for $\lVert x\rVert$.
+* $\lVert \ldots \rVert$ (`\lVert ... \rVert` or `\| ... \|`): For norm, write `\lVert x\rVert` instead of `||x||` for $\lVert x\rVert$.
 
-  > We'll talk about this later. Notice that you can also write `\Vert x \Vert` for $\Vert x\Vert$, though I still prefer `\lVert x \rVert` from the very same reason with `\lvert ... \rvert`.
+  > Notice that you can also write `\Vert x \Vert` or `\| x |\` for $\Vert x\Vert$, though I still prefer `\lVert x \rVert` from the very same reason with `\lvert ... \rvert`.
 
-* `[...]` (`\lbrack ... \rbrack` or `[ ... ]`): They are indeed equivalent, so I prefer `[ ... ]` for simplicity.
+* $\lbrack \ldots \rbrack$ (`\lbrack ... \rbrack` or `[ ... ]`): They are indeed equivalent, so I prefer `[ ... ]` for simplicity.
 
-* `<...>` (`\langle ... \rangle`)
+* $\langle\ldots\rangle$ (`\langle ... \rangle`): Please don't use `<x, y>` for things like inner product, use `\langle x, y \rangle` instead to produce $\langle x, y\rangle$.
 
-* `{...}` (`\{ ... \}`)
+* $\{\ldots\}$ (`\{ ... \}`): The usual set notation.
 
 Let's see how we can fix this. 
 
