@@ -14,7 +14,7 @@ For a more advanced $\LaTeX$ setup, please see my [VSCode-LaTeX-Inkscape](https:
     - [Semantic](#semantic)
     - [Misused](#misused)
     - [Else](#else)
-  + [Brackets, Parentheses, etc.](#brackets--parentheses--etc)
+  + [Brackets, Parentheses, etc.](#brackets-parentheses-etc)
     - [Automatic Sizing](#automatic-sizing)
     - [Manual Sizing](#manual-sizing)
   + [Spacing](#spacing)
