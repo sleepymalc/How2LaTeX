@@ -29,7 +29,7 @@ Also, you may notice that lots of commands I tend to use are rather *long*, this
 
 ## The Basic
 
-### Newline and Paragraph
+### Newline `\\`
 
 I often see things like
 
@@ -52,7 +52,6 @@ the output will be
 ```latex
   This is one paragraph.
 This is still in one paragraph!
-
   This is another.
 ```
 
@@ -61,7 +60,6 @@ Notice the indention at the start of the two paragraphs, while there is no inden
 ```latex
 This is 
 one paragraph
-
 This is another.
 ```
 
@@ -69,11 +67,60 @@ the output will be like this:
 
 ```bash
   This is one paragraph.
-
   This is another.
 ```
 
 Hence, while `\\` will force a new line and if you already have a blank line between paragraphs, `\\` is redundant. And I don't recommend you to manually insert a line break in your paragraph to do auto adjusting.
+
+### Paragraph `\par`
+
+Another confusing command is `\par`. I have seen somehting like
+
+```latex
+\par This is one paragraph.
+
+\par This is another.
+```
+
+Although this has the same output as above, but this is indeed wrong. The `\par` command is used to **end a paragraph**, not to **start one**. So `\par` is the same thing by leaving a blank line as we mentioned. If you really want to use `\par`, this is something you may see
+
+```latex
+This is one paragraph.\par This is another.
+```
+
+and the output will be
+
+```bash
+  This is one paragraph.
+  This is another.
+```
+
+> The reason why you can *theoretically* use `\par` to start a paragraph is that, this command will not be counted multiple times: If you are already in a new paragraph, `\par` will do **nothing**. For example,
+>
+> ```latex
+> This is one paragraph.\par\par\par\par This is another.
+> ```
+>
+> produces
+>
+> ```bash
+>   This is one paragraph.
+>   This is another.
+> ```
+>
+> And if you put `\par` in front, 
+>
+> ```latex
+> \par This is one paragraph.\par This is another.
+> ```
+>
+> Since at the beginning of the document, we're already in a new paragraph, so the first `\par` will **do nothing**, result in the equivalent input:
+>
+> ```latex
+> This is one paragraph.\par This is another.
+> ```
+>
+> Hence this will produce the desired output. But again, I suggest you to use blank line to start new paragraph.
 
 ## Math Environment
 
