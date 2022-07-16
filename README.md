@@ -39,7 +39,7 @@ This is another.
 The command `\\` will produce a _line break_, i.e., will end the current line and start a new one. This is different from a paragraph, as **the start of paragraphs is usually indented**. That is to say, if we write
 
 ```latex
-This is one paragraph.\\ This is still in one paragraph!
+This is one paragraph.\\ This is still in the paragraph!
 
 This is another.
 ```
@@ -90,7 +90,7 @@ When you need to have some texts in your math equation, **please** use `\text{..
 
 ```latex
 \[
-	x_i \geq 0 \text{ for all } i,
+  x_i \geq 0 \text{ for all } i,
 \]
 ```
 which produces
@@ -205,7 +205,7 @@ with the source code being
 
 ```latex
 \[
-	N \coloneqq \vert \sum\limits_{j=1}^\infty ( \sum\limits_{i=1}^\infty X_{ij} ) \vert.
+  N \coloneqq \vert \sum\limits_{j=1}^\infty ( \sum\limits_{i=1}^\infty X_{ij} ) \vert.
 \]
 ```
 
@@ -230,7 +230,7 @@ To automatically resize the brackets, and parentheses, we use `\left...\right...
 
 ```latex
 \[
-	N \coloneqq \left\vert \sum\limits_{j=1}^\infty \left( \sum\limits_{i=1}^\infty X_{ij} \right) \right\vert
+  N \coloneqq \left\vert \sum\limits_{j=1}^\infty \left( \sum\limits_{i=1}^\infty X_{ij} \right) \right\vert
 \]
 ```
 
@@ -263,7 +263,7 @@ Sometimes the automatic sizing may tend to be too big since it's trying to wrap 
 
 ```latex
 \[
-	( \big( \Big( \bigg( \Bigg(
+  ( \big( \Big( \bigg( \Bigg(
 \]
 ```
 
@@ -295,7 +295,7 @@ with the code being
 
 ```latex
 \[
-	x = a_0 + \frac{1}{a_1 + \frac{1}{a_2 + \frac{1}{a_3 + \frac{1}{a_4} } } }
+  x = a_0 + \frac{1}{a_1 + \frac{1}{a_2 + \frac{1}{a_3 + \frac{1}{a_4} } } }
 \]
 ```
 
@@ -307,7 +307,7 @@ with the code being
 
 ```latex
 \[
-	x = a_0 + \cfrac{1}{a_1 + \cfrac{1}{a_2 + \cfrac{1}{a_3 + \cfrac{1}{a_4} } } }.
+  x = a_0 + \cfrac{1}{a_1 + \cfrac{1}{a_2 + \cfrac{1}{a_3 + \cfrac{1}{a_4} } } }.
 \]
 ```
 
