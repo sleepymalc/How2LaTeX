@@ -136,7 +136,7 @@ Most of the time, when you're writing a math symbol with your direct keyboard in
 
 * `'` (`\prime`): When you need to render $x^\prime$, write `x^\prime` instead of simply `x'`.
 
-* `*` (`\ast`): When you need to render $x^\ast$, write `x^\ast` instead of simply `x*`.
+* `^*` (`\ast`): When you need to render $x^\ast$, write `x^\ast` instead of simply `x^*`.
 
   > There are also something called `\star`, which produces $\star$. In some cases, $x^\star$ may be desired.
 
