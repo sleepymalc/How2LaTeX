@@ -83,7 +83,7 @@ Another confusing command is `\par`. I have seen somehting like
 \par This is another.
 ```
 
-Although this has the same output as above, but this is indeed wrong. The `\par` command is used to **end a paragraph**, not to **start one**. So `\par` is the same thing by leaving a blank line as we mentioned. If you really want to use `\par`, this is something you may see
+Although this has the same output as above, but this is indeed wrong. The `\par` command is used to **end a paragraph**, not to **start one**. So `\par` is the same thing by leaving a blank line as we mentioned. If you really want to use `\par`, this is something you should write
 
 ```latex
 This is one paragraph.\par This is another.
