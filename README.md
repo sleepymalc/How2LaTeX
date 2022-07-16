@@ -26,21 +26,34 @@ For a more advanced $\LaTeX$ setup, please see my [VSCode-LaTeX-Inkscape](https:
 
 ## The Basic
 
-### Newline `\\`
+### Newline and Paragraph
 
 I often see things like
 
 ```latex
-This is one paragraph.\\
+	This is one paragraph.\\
 
-This is another.
+	This is another.
 ```
 
-The command `\\` will produce a _line break_, i.e., will end the current line and start a new one. This is different from a paragraph, as **the start 
-of paragraphs is usually indented**. 
+The command `\\` will produce a _line break_, i.e., will end the current line and start a new one. This is different from a paragraph, as **the start of paragraphs is usually indented**. That is to say, if we write
 
-When writing paragraphs, $\LaTeX$ will wrap text in adjacent lines as if they were *part of the same paragraph*, while treating `\n` (i.e., newline 
-symbol) as a sign for starting a new paragraph. So, with the following input:
+```latex
+	This is one paragraph.\\ This is still in one paragraph!
+
+	This is another.
+```
+
+the output will be
+
+```latex
+	This is one paragraph.
+This is still in one paragraph!
+
+	This is another.
+```
+
+Notice the indention at the start of the two paragraphs, while there is no indention on that new line since we only introduce a line break, which will not start a new paragraph. So basically, $\LaTeX$ will wrap text in adjacent lines as if they were *part of the same paragraph*, while treating `\n` (i.e., newline symbol) as a sign for starting a new paragraph. So, with the following input:
 
 ```latex
 This is 
@@ -57,7 +70,7 @@ This is one paragraph.
 This is another.
 ```
 
-Hence, as we saw before, while `\\` will force a new line, if you already have a blank line between paragraphs, `\\` is redundant.
+Hence, as we saw before, while `\\` will force a new line, but if you already have a blank line between paragraphs, `\\` is redundant. And I don't recommand you to manually insert line break in your paragraph to do auto adjusting.
 
 ## Math Environment
 
