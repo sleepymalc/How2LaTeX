@@ -36,7 +36,11 @@ This is one paragraph.\\
 This is another.
 ```
 
-When writing paragraphs, $\LaTeX$ will wrap text in adjacent lines as if they were *part of the same paragraph*, while treating `\n` (i.e., newline symbol) as a sign for starting a new paragraph. So, with the following input
+The command `\\` will produce a _line break_, i.e., will end the current line and start a new one. This is different from a paragraph, as **the start 
+of paragraphs is usually indented**. 
+
+When writing paragraphs, $\LaTeX$ will wrap text in adjacent lines as if they were *part of the same paragraph*, while treating `\n` (i.e., newline 
+symbol) as a sign for starting a new paragraph. So, with the following input:
 
 ```latex
 This is 
@@ -45,7 +49,7 @@ one paragraph
 This is another.
 ```
 
-the output will be like 
+the output will be like:
 
 ```bash
 This is one paragraph.
@@ -53,7 +57,7 @@ This is one paragraph.
 This is another.
 ```
 
-Hence, while `\\` will create a new line and start a new paragraph, as we now know, if you already have a blank line between paragraphs, `\\` is redundant.
+Hence, as we saw before, while `\\` will force a new line, if you already have a blank line between paragraphs, `\\` is redundant.
 
 ## Math Environment
 
