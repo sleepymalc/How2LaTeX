@@ -167,9 +167,9 @@ you should write `\int x \,\mathrm{d}x` instead of `\int x \,\text{d}x`.
 
 Most of the time, when you're writing a math symbol with your direct keyboard input, there's a corresponding command in $\LaTeX$ as well. Here is a short list of them:
 
-* `:` (`\colon`): Instead of writing `f: X \to Y` for $f:X\to Y$, write `f\colon X \to Y` instead.
+* $\colon$ (`\colon`): Instead of writing `f: X \to Y` for $f:X\to Y$, write `f\colon X \to Y` instead.
 
-* `...` (`\ldots`): This is a straightforward one. Instead of writing `a_1, a_2, ...` for $a_1, a_2, \ldots$, write `a_2, a_2, \ldots` instead.
+* $\ldots$ (`\ldots`): This is a straightforward one. Instead of writing `a_1, a_2, ...` for $a_1, a_2, \ldots$, write `a_2, a_2, \ldots` instead.
 
   > There's something called `\cdots` also, which is my personal preferred one. If you really want to know about `...`, there are actually five types of them:
   > <div align="center">
@@ -186,19 +186,19 @@ Most of the time, when you're writing a math symbol with your direct keyboard in
   > 
   > The above is the conventions suggested by American Mathematical Society. If you don't want to follow them strictly, just choose one of them and stick with it.
 
-* `:=`, `=:` (`\coloneqq`, `\eqqcolon`): Another direct one. When you define a new symbol such as let $y\coloneqq x_1-x_2$, write `y \coloneqq x_1 - x_2` instead of `y := x_1 - x_2`.
+* $\coloneqq$, $\eqqcolon$ (`\coloneqq`, `\eqqcolon`): Another direct one. When you define a new symbol such as let $y\coloneqq x_1-x_2$, write `y \coloneqq x_1 - x_2` instead of `y := x_1 - x_2`.
 
   > You need to put `\usepackage{mathtools}` in your header, namely you need the `mathtools` package.
 
-* `>>`, `<<` (`\gg`, `\ll`): Use `\gg` for much greater than and `\ll` for much less than instead of directly using `>>` and `<<`. The former ones produce $\gg$, $\ll$, while the latter ones produce $>>$ and $<<$.
+* $\gg$, $\ll$ (`\gg`, `\ll`): Use `\gg` for much greater than and `\ll` for much less than instead of directly using `>>` and `<<`. The former ones produce $\gg$, $\ll$, while the latter ones produce $>>$ and $<<$.
 
 Also, there are some symbols is by default equivalent to your direct keyboard output.
 
-* `'` (`\prime`):  `x'` is equivalent to `x^\prime`.
+* $\prime$ (`\prime`):  `x'` is equivalent to `x^\prime`.
 
   > There exists some pathological examples like ${x^\prime}^\prime$ v.s. ${x'}^{'}$. But for usual cases, $x'$ is equivalent to $x^\prime$, and indeed if you write `x''`, $\LaTeX$ renders this as `x^{\prime\prime}` as $x''$ and so on. I personally perfer to use `^\prime` since in this way I get a full control of my output.
 
-* `*` (`\ast`): `*` is equivalent to `\ast`.
+* $\ast$ (`\ast`): `*` is equivalent to `\ast`.
 
   > There are also something called `\star`, which produces $\star$. In some cases, $x^\star$ may be desired. For me, I prefer to use `\ast` whenever I want to render $x^\ast$. This is because I generally regard `*` as an operator, which can mean convolution for example. And to mark a variable, I think `^\ast` is a better touch.
 
