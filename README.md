@@ -277,7 +277,7 @@ The size of the absolute value and the parenthesis are still in the default size
 
 * $\langle\ldots\rangle$ (`\langle ... \rangle`): Please don't use `<x, y>` for things like inner product, use `\langle x, y \rangle` instead to produce $\langle x, y\rangle$.
 
-* $\{\ldots\}$ (`\{ ... \}`): The usual set notation.
+* $\\{\ldots\\}$ (`\{ ... \}`): The usual set notation.
 
 Let's see how we can fix this. 
 
