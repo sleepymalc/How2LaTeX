@@ -18,7 +18,7 @@ Also, you may notice that lots of commands I tend to use are rather *long*, this
     - [Semantic](#semantic)
     - [Misused](#misused)
     - [Else](#else)
-  + [Brackets, Parentheses, etc.](#brackets--parentheses--etc)
+  + [Brackets, Parentheses, etc.](#brackets-parentheses-etc)
     - [Automatic Sizing](#automatic-sizing)
     - [Manual Sizing](#manual-sizing)
   + [Spacing](#spacing)
