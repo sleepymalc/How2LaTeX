@@ -242,6 +242,10 @@ I sometimes see things like $\cup_{i=1}^{\infty} X_i$ instead of $\bigcup\nolimi
 
 </div>
 
+#### Functions
+
+There are lots of functions have their own commands, e.g., $\lg (x)$, $\log (x)$, $\sin (x)$, $\cos (x)$ and so on. Please don't write `lg(x)`, and instead write $\lg(x)$ and so on.
+
 #### Else
 
 There are two symbols I want to mention, the **empty set** symbol and **l** (ell). 
