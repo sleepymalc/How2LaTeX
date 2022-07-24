@@ -17,6 +17,7 @@ Also, you may notice that lots of commands I tend to use are rather *long* (usua
   + [Symbols](#symbols)
     - [Semantic](#semantic)
     - [Misused](#misused)
+    - [Functions](#functions)
     - [Else](#else)
   + [Brackets, Parentheses, etc.](#brackets-parentheses-etc)
     - [Automatic Sizing](#automatic-sizing)
