@@ -16,9 +16,6 @@ You may notice that lots of commands I tend to use are rather *long* (usually me
 
 ## Table of Content
 
-- [Abstract](#abstract)
-- [Disclaimer](#disclaimer)
-- [Table of Content](#table-of-content)
 - [The Basic](#the-basic)
   - [Newline `\\`](#newline-)
   - [Paragraph `\par`](#paragraph-par)
