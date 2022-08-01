@@ -1,5 +1,9 @@
 # How2LaTeX
 
+<p align="center">
+	<img src="https://github.com/sleepymalc/How2LaTeX/blob/main/preview.png"/>
+</p>
+
 <p align="center"><b><i>
 	A quick guide to help you write professional LaTeX docs.
 </i></b></p>
