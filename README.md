@@ -1,7 +1,7 @@
 # How2LaTeX
 
 <p align="center">
-	<img src="https://github.com/sleepymalc/How2LaTeX/blob/main/preview.png"/>
+	<img src="./preview.png"/>
 </p>
 
 <p align="center"><b><i>
