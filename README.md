@@ -451,4 +451,4 @@ since we'll have some spacing issues if we go with the latter one.
 
 1. [CS 209-Mathematical Writing](https://jmlr.csail.mit.edu/reviewing-papers/knuth_mathematical_writing.pdf)
 2. [Wikibooks-LaTeX/Mathematics](https://en.wikibooks.org/wiki/LaTeX/Mathematics)
-3. [Yiaho Liu: Introduction to LaTeX](https://github.com/sleepymalc/How2LaTeX/blob/main/Reference/LaTeX-Liu.pdf)
+3. [Yiaho Liu: Introduction to LaTeX](./Reference/LaTeX-Liu.pdf)
