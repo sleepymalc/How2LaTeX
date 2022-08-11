@@ -18,6 +18,8 @@ I'm not writing this guide to tell you how to write $\LaTeX$ **correctly**, inst
 
 You may notice that lots of commands I tend to use are rather *long* (usually means it's in plain $\TeX$ style), this is because **I don't need to type out all these**: I use [hsnips](https://github.com/draivin/hsnips) in particular, which allows me to type a few self-defined characters and expend automatically. For a more advanced $\LaTeX$ setup like this, please see [VSCode-LaTeX-Inkscape](https://github.com/sleepymalc/VSCode-LaTeX-Inkscape).
 
+Also, this is the best way to see what's the difference compared to other $\TeX$ commands. If you want, you're welcome to just define your own command and then use it instead.
+
 ## Table of Content
 
 - [The Basic](#the-basic)
