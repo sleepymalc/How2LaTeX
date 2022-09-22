@@ -222,15 +222,15 @@ Also, some symbols are by default equivalent to your direct keyboard output.
 
 There are also commands which produce very similar output (or even exactly the same), but with different semantics. To keep the source code clean, we mention some of them.
 
-- `\rightarrow` v.s. `\to` ($\rightarrow$): I use `\to` for mapping, e.g. $f\colon X\to Y$, while `\rightarrow` for all other cases.
+- `\rightarrow` v.s. `\to` ( $\rightarrow$ ): I use `\to` for mapping, e.g. $f\colon X\to Y$, while `\rightarrow` for all other cases.
 
-- `\leftarrow` v.s. `\gets` ($\leftarrow$): I use `\gets` when writing pseudocode, while `\leftarrow` for all other cases.
+- `\leftarrow` v.s. `\gets` ( $\leftarrow$ ): I use `\gets` when writing pseudocode, while `\leftarrow` for all other cases.
 
-- `\Rightarrow` v.s. `\implies` ($\Rightarrow$ v.s. $\implies$): I use `\implies` when writing proofs, while `\Rightarrow` for all other cases.
+- `\Rightarrow` v.s. `\implies` ( $\Rightarrow$ v.s. $\implies$ ): I use `\implies` when writing proofs, while `\Rightarrow` for all other cases.
 
-- `\Leftarrow` v.s. `\impliedby` ($\Leftarrow$ v.s. $\impliedby$): I use `\impliedby` when writing proofs, while `\Leftarrow` for all other cases.
+- `\Leftarrow` v.s. `\impliedby` ( $\Leftarrow$ v.s. $\impliedby$ ): I use `\impliedby` when writing proofs, while `\Leftarrow` for all other cases.
 
-- `\Leftrightarrow` v.s. `\iff` ($\Leftrightarrow$ v.s. $\iff$): Similarly, I use `\iff` when writing proofs, while `\Leftrightarrow` for all other cases.
+- `\Leftrightarrow` v.s. `\iff` ( $\Leftrightarrow$ v.s. $\iff$ ): Similarly, I use `\iff` when writing proofs, while `\Leftrightarrow` for all other cases.
 
   > Since `\implies`, `\impliedby`, and also `\iff` are quite long, so I redefined them into their corresponding ones for a more compact look. But in the code, I still type `\implies` when writing proof. To redefine them, put
   >
