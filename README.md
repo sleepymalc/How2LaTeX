@@ -22,6 +22,9 @@ Also, this is the best way to see what's the difference compared to other $\TeX$
 
 ## Table of Content
 
+- [Abstract](#abstract)
+- [Disclaimer](#disclaimer)
+- [Table of Content](#table-of-content)
 - [The Basic](#the-basic)
   - [Newline `\\`](#newline-)
   - [Paragraph `\par`](#paragraph-par)
@@ -41,6 +44,8 @@ Also, this is the best way to see what's the difference compared to other $\TeX$
 - [Else](#else-1)
   - [Continued Fractions](#continued-fractions)
   - [Self-defined Commands](#self-defined-commands)
+  - [Text Spacing](#text-spacing)
+  - [Quote](#quote)
 - [Further Reading](#further-reading)
 
 ## The Basic
@@ -87,7 +92,7 @@ the output will be like this:
   This is another.
 ```
 
-Hence, while `\\` will force a new line and if you already have a blank line between paragraphs, `\\` is redundant. And I don't recommend you to manually insert a line break in your paragraph to do auto-adjusting.
+Hence, while `\\` will force a new line and if you already have a blank line between paragraphs, `\\` is redundant. And I don't recommend you manually insert a line break in your paragraph to do auto-adjusting.
 
 ### Paragraph `\par`
 
@@ -260,7 +265,7 @@ I sometimes see things like $\cup_{i=1}^{\infty} X_i$ instead of $\bigcup\nolimi
 
 #### Functions
 
-There are lots of functions have their own commands, e.g., $\lg (x)$, $\log (x)$, $\sin (x)$, $\cos (x)$, etc. Please don't write `lg(x)`, which produces $lg(x)$. Instead, write `\lg(x)` for $\lg(x)$. Similarly, same for `\log(x)`, `\sin(x)`, `\cos(x)` and so on.
+There are lots of functions that have their own commands, e.g., $\lg (x)$, $\log (x)$, $\sin (x)$, $\cos (x)$, etc. Please don't write `lg(x)`, which produces $lg(x)$. Instead, write `\lg(x)` for $\lg(x)$. Similarly, the same for `\`log(x)`,`\sin(x)`,`\cos(x)` and so on.
 
 #### Else
 
@@ -360,7 +365,7 @@ where I use `\left[ ... \right]` on the left and `\bigg[ ... \bigg]` on the righ
 >
 > to avoid the auto-resizing issue. Please don't do that, just don't.
 
-Another use case is that, `\left( k g(x) \right)` produces $\left( k g(x) \right)$, while `\left` and `\right` produce the same size delimiters as those nested within it. In this case, we can use `\big( k g(x) \big)`, which produces $\big( k g(x) \big)$ to further distinguish the nested parentheses.
+Another use case is that `\left( k g(x) \right)` produces $\left( k g(x) \right)$, while `\left` and `\right` produce the same size delimiters as those nested within it. In this case, we can use `\big( k g(x) \big)`, which produces $\big( k g(x) \big)$ to further distinguish the nested parentheses.
 
 ### Spacing
 
@@ -407,7 +412,7 @@ instead. You can indeed put the subscript and superscript below/on the summation
 
 ### Continued Fractions
 
-One important thing relates to sizing but neglected by lots of people is the way of handling **continued fractions**. If we use `\frac{}{}` throughout, we'll have something like
+One important thing that relates to sizing but is neglected by lots of people is the way of handling **continued fractions**. If we use `\frac{}{}` throughout, we'll have something like
 
 $$x = a_0 + \frac{1}{a_1 + \frac{1}{a_2 + \frac{1}{a_3 + \frac{1}{a_4} } } }$$
 
@@ -448,6 +453,38 @@ instead of
 ```
 
 since we'll have some spacing issues if we go with the latter one.
+
+### Text Spacing
+
+Unlike spacing in math mode, when writing text, there are just a few things to note. The $\LaTeX$ compiler uses a simple algorithm to determine whether you're going to end a sentence. Specifically, it looks at `.`, and see whether the character before it is a lowercase alphabet. So for example, when you write
+
+```latex
+  This is common, e.g. A, B, and C.
+```
+
+Then the compiler will think you're going to end the sentence right after `e.g.`, so it will create an extra spacing for you. Other common situations are `w.r.t.` (with respect to), `w.p.` (with probability), and `w.h.p.` (with high probability). The way to fix this is to add `\` after `.`, i.e., you may write
+
+```latex
+  This is common, e.g.\ A, B, and C.
+```
+
+In this way, you force the compiler to create a normal spacing after the period, fixing the problem.
+
+### Quote
+
+It is typical that when you write a quote in $\LaTeX$, you will write something like
+
+```latex
+  "this is a quote"
+```
+
+in $\LaTeX$, this will render as $\text{"this is a quote"}$, where we get two backward on both the beginning of the quote and the end of the quote. Instead, you should write
+
+```latex
+  ``this is a quote''
+```
+
+which renders as $\text{``this is a quote''}$.
 
 ## Further Reading
 
