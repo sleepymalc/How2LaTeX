@@ -377,7 +377,7 @@ with the source code being `\int x\,\mathrm{d}x`. Notice that there's a `\,` bef
 
 $$\int x\mathrm{d}x,$$
 
-where $x^2\mathrm{d}x$ is now a single entity rather than two independent ones. $\LaTeX$ provides several such commands to give you a small indent.
+where $x\mathrm{d}x$ is now a single entity rather than two independent ones. $\LaTeX$ provides several such commands to give you a small indent.
 
 <div align="center">
 
